@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 function Navbar() {
   return (
     <div>
@@ -47,96 +47,6 @@ function Navbar() {
           <div className="menu-topbar-right">
             <span className="font-xs color-brand-3">Need help? Call Us:</span>
             <span className="font-sm-bold color-success"> + 1800 900</span>
-            <div className="dropdown dropdown-language">
-              <button
-                className="btn dropdown-toggle"
-                id="dropdownPage"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="true"
-                data-bs-display="static"
-              >
-                <span className="dropdown-right font-xs color-brand-3">
-                  <img src="assets/imgs/template/en.svg" alt="Ecom" /> English
-                </span>
-              </button>
-              <ul
-                className="dropdown-menu dropdown-menu-light"
-                aria-labelledby="dropdownPage"
-                data-bs-popper="static"
-              >
-                <li>
-                  <a className="dropdown-item" href="#">
-                    <img src="assets/imgs/template/flag-en.svg" alt="Ecom" />{" "}
-                    English
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    <img src="assets/imgs/template/flag-fr.svg" alt="Ecom" />{" "}
-                    Français
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    <img src="assets/imgs/template/flag-es.svg" alt="Ecom" />{" "}
-                    Español
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    <img src="assets/imgs/template/flag-pt.svg" alt="Ecom" />{" "}
-                    Português
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    <img src="assets/imgs/template/flag-cn.svg" alt="Ecom" />{" "}
-                    中国人
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="dropdown dropdown-language">
-              <button
-                className="btn dropdown-toggle"
-                id="dropdownPage2"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="true"
-                data-bs-display="static"
-              >
-                <span className="dropdown-right font-xs color-brand-3">
-                  USD
-                </span>
-              </button>
-              <ul
-                className="dropdown-menu dropdown-menu-light dropdown-menu-end"
-                aria-labelledby="dropdownPage2"
-                data-bs-popper="static"
-              >
-                <li>
-                  <a className="dropdown-item active" href="#">
-                    USD
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    EUR
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    AUD
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    SGP
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
@@ -149,11 +59,12 @@ function Navbar() {
                   <img alt="Ecom" src="assets/imgs/template/logo.png" />
                 </a>
               </div>
-              <div className="header-search">
+              {/* <div className="header-search">
                 <div className="box-header-search">
+                  
                   <form className="form-search" method="post" action="#">
                     <div className="box-category">
-                      <select className="select-active select2-hidden-accessible">
+                      <select className=" select2-hidden-accessible">
                         <option>All categories</option>
                         <option value="Computers Accessories">
                           Computers Accessories
@@ -174,13 +85,13 @@ function Navbar() {
                       <input
                         className="form-control font-xs"
                         type="text"
-                        defaultValue
+                        
                         placeholder="Search for items"
                       />
                     </div>
                   </form>
                 </div>
-              </div>
+              </div> */}
               <div className="header-nav">
                 <nav className="nav-main-menu d-none d-xl-block">
                   <ul className="main-menu">
@@ -719,7 +630,7 @@ function Navbar() {
           </div>
         </div>
       </div>
-      
+
       <div className="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
         <div className="mobile-header-wrapper-inner">
           <div className="mobile-header-content-area">
