@@ -9,7 +9,7 @@ function Navbar() {
             <div className="text-center">
               <img
                 className="mb-10"
-                src="assets/imgs/template/favicon.svg"
+                src="assets/imgs/template/logo.png"
                 alt="Ecom"
               />
               <div className="preloader-dots" />
@@ -146,7 +146,7 @@ function Navbar() {
             <div className="header-left">
               <div className="header-logo">
                 <a className="d-flex" href="index.html">
-                  <img alt="Ecom" src="assets/imgs/template/logo.svg" />
+                  <img alt="Ecom" src="assets/imgs/template/logo.png" />
                 </a>
               </div>
               <div className="header-search">
@@ -489,7 +489,7 @@ function Navbar() {
           <div className="mobile-header-content-area">
             <div className="mobile-logo">
               <a className="d-flex" href="index.html">
-                <img alt="Ecom" src="assets/imgs/template/logo.svg" />
+                <img alt="Ecom" src="assets/imgs/template/logo.png" />
               </a>
             </div>
             <div className="perfect-scroll">
@@ -725,7 +725,7 @@ function Navbar() {
           <div className="mobile-header-content-area">
             <div className="mobile-logo">
               <a className="d-flex" href="index.html">
-                <img alt="Ecom" src="assets/imgs/template/logo.svg" />
+                <img alt="Ecom" src="assets/imgs/template/logo.png" />
               </a>
             </div>
             <div className="perfect-scroll">

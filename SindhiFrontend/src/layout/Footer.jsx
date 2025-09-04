@@ -136,7 +136,11 @@ function Footer() {
             <div className="container">
               <div className="footer-2-top mb-20">
                 <a href="index.html">
-                  <img alt="Ecom" src="assets/imgs/template/logo-2.svg" />
+                 <img 
+                  alt="Ecom" 
+                  src="assets/imgs/template/logo.png" 
+                  className="footer-logo"
+                 />
                 </a>
                 <a className="font-xs color-gray-1000" href="#">
                   EcomMarket.com
