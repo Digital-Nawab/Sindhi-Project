@@ -1,10 +1,8 @@
 import React from 'react'
-import Layout from '../../../layout/Layout';
 
-function Index() {
+function Hero() {
   return (
-    <>
-      
+      <>  
         <section className="section-box">
           <div className="banner-hero banner-1">
             <div className="container">
@@ -174,10 +172,8 @@ function Index() {
             </div>
           </div>
         </section>
-      
-    </>
-    
+      </>
   )
 }
 
-export default Index
+export default Hero
