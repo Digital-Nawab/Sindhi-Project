@@ -3180,7 +3180,9 @@ a.text-brand-3:hover {
   display: block;
 }
 .header .main-header .header-left .header-logo a img {
-  min-height: 37px;
+    height: 37px;     
+    width: auto;      
+    object-fit: contain; 
 }
 .header .main-header .header-left .header-nav {
   display: inline-block;
@@ -4579,9 +4581,14 @@ a.text-brand-3:hover {
   margin: 0px 0px 50px 0px;
   padding: 105px 0px 75px 0px;
 }
-
+.footer-logo {
+  height: 37px;        
+  width: auto;          
+  max-width: 150px;    
+  object-fit: contain; 
+}
 .footer-2-top a {
-  vertical-align: top;
+  /* vertical-align: top; */
   display: inline-block;
   padding-right: 10px;
 }
