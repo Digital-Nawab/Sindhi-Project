@@ -47,7 +47,7 @@ function Navbar() {
     {
       key: "home",
       label: "Home",
-      href: "#",
+      href: "/",
       active: true,
     },
     {
@@ -75,7 +75,7 @@ function Navbar() {
     {
       key: "pages",
       label: "Contact Us",
-      href: "#",
+      href: "/contact",
     },
   ];
 
@@ -173,7 +173,7 @@ function Navbar() {
           <div className="menu-topbar-left d-none d-xl-block">
             <ul className="nav-small">
               <li>
-                <a className="font-xs" href="#">
+                <a className="font-xs" href="/about">
                   About Us
                 </a>
               </li>
@@ -207,7 +207,7 @@ function Navbar() {
           <div className="main-header">
             <div className="header-left">
               <div className="header-logo">
-                <a className="d-flex" href="index.html">
+                <a className="d-flex" href="/">
                   <img alt="Ecom" src="assets/imgs/template/logo.png" />
                 </a>
               </div>
