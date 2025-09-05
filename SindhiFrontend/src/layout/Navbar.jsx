@@ -355,7 +355,7 @@ function Navbar() {
           <div className="mobile-header-content-area">
             <div className="mobile-logo">
               <a className="d-flex" href="index.html">
-                <img alt="Ecom" src="assets/imgs/template/logo.png" />
+                <img alt="Ecom" src="assets/imgs/template/logo.png"   className="mobile-logo-img"/>
               </a>
               {/* <button 
                 className="mobile-menu-close"

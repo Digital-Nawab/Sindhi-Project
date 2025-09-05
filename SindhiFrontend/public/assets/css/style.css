@@ -3169,6 +3169,7 @@ a.text-brand-3:hover {
 .header .main-header .header-left {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   padding: 5px 0px;
 }
@@ -3806,6 +3807,11 @@ a.text-brand-3:hover {
   border-bottom: 1px solid #D5DFE4;
   padding-bottom: 15px;
 }
+ .mobile-logo-img {
+    height: 37px;
+    width: auto;
+    object-fit: contain;
+  }
 .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-top {
   display: flex;
   justify-content: space-between;
@@ -4531,7 +4537,7 @@ a.text-brand-3:hover {
 }
 .footer .footer-bottom {
   border-top: 1px solid #CAD6EC;
-  padding: 30px 0px;
+  padding: 20px 0px;
   color: #8C9EC5;
   font-size: 14px;
 }
@@ -7108,7 +7114,7 @@ a.text-brand-3:hover {
 .banner-bottom-1 {
   width: 100%;
   height: 265px;
-  background: url(../imgs/page/homepage6/reading-table.png) no-repeat center;
+  background: url(../imgs/page/homepage6/news2.png) no-repeat center;
   margin-bottom: 30px;
   display: inline-block;
   background-size: cover;
@@ -7118,7 +7124,7 @@ a.text-brand-3:hover {
 .banner-bottom-2 {
   width: 100%;
   height: 265px;
-  background: url(../imgs/page/homepage6/table-lamp.png) no-repeat center;
+  background: url(../imgs/page/homepage8/news1.png) no-repeat center;
   margin-bottom: 30px;
   display: inline-block;
   background-size: cover;
@@ -7138,7 +7144,7 @@ a.text-brand-3:hover {
 .banner-bottom-4 {
   width: 100%;
   height: 265px;
-  background: url(../imgs/page/homepage6/sofa.png) no-repeat center;
+  background: url(../imgs/page/blog/blog-1.jpg) no-repeat center;
   margin-bottom: 30px;
   display: inline-block;
   background-size: cover;
@@ -7148,7 +7154,7 @@ a.text-brand-3:hover {
 .banner-bottom-5 {
   width: 100%;
   height: 265px;
-  background: url(../imgs/page/homepage6/relax.png) no-repeat center;
+  background: url(../imgs/page/homepage5/news1.png) no-repeat center;
   margin-bottom: 30px;
   display: inline-block;
   background-size: cover;
