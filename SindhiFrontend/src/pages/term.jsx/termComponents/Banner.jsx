@@ -8,7 +8,7 @@ function Banner() {
       {/* Content */}
       <div className="relative text-center px-6 text-white max-w-3xl">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
-          About Our Company
+          Term & Conditions 
         </h1>
         <p className="text-lg md:text-2xl mb-8">
           We are committed to delivering the best services to our clients with

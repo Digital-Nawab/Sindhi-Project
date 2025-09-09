@@ -2,67 +2,57 @@ import React from 'react'
 
 function FreeDelivery() {
   return (
-   <section className="section-box mt-90 mb-50">
-  <div className="container">
-    <ul className="list-col-5">
-      <li>
-        <div className="item-list">
-          <div className="icon-left">
-            <img src="assets/imgs/template/delivery.svg" alt="Ecom" />
+    <section class="bg-white py-10">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        
+        <div class="flex items-center gap-3 border rounded-lg p-5 hover:shadow-md transition">
+          <div class="text-blue-700 text-3xl">
+            ✈️
           </div>
-          <div className="info-right">
-            <h5 className="font-lg-bold color-gray-100">Free Delivery</h5>
-            <p className="font-sm color-gray-500">From all orders over $10</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div className="item-list">
-          <div className="icon-left">
-            <img src="assets/imgs/template/support.svg" alt="Ecom" />
-          </div>
-          <div className="info-right">
-            <h5 className="font-lg-bold color-gray-100">Support 24/7</h5>
-            <p className="font-sm color-gray-500">Shop with an expert</p>
+          <div>
+            <h3 class="font-semibold text-gray-900">Free Delivery</h3>
+            <p class="text-sm text-gray-500">From all orders over $10</p>
           </div>
         </div>
-      </li>
-      <li>
-        <div className="item-list">
-          <div className="icon-left">
-            <img src="assets/imgs/template/voucher.svg" alt="Ecom" />
+        <div class="flex items-center gap-3 border rounded-lg p-5 hover:shadow-md transition">
+          <div class="text-blue-700 text-3xl">
+            🎧
           </div>
-          <div className="info-right">
-            <h5 className="font-lg-bold color-gray-100">Gift voucher</h5>
-            <p className="font-sm color-gray-500">Refer a friend</p>
+          <div>
+            <h3 class="font-semibold text-gray-900">Support 24/7</h3>
+            <p class="text-sm text-gray-500">Shop with an expert</p>
           </div>
         </div>
-      </li>
-      <li>
-        <div className="item-list">
-          <div className="icon-left">
-            <img src="assets/imgs/template/return.svg" alt="Ecom" />
+        <div class="flex items-center gap-3 border rounded-lg p-5 hover:shadow-md transition">
+          <div class="text-blue-700 text-3xl">
+            🎁
           </div>
-          <div className="info-right">
-            <h5 className="font-lg-bold color-gray-100">Return &amp; Refund</h5>
-            <p className="font-sm color-gray-500">Free return over $200</p>
+          <div>
+            <h3 class="font-semibold text-gray-900">Gift voucher</h3>
+            <p class="text-sm text-gray-500">Refer a friend</p>
           </div>
         </div>
-      </li>
-      <li>
-        <div className="item-list">
-          <div className="icon-left">
-            <img src="assets/imgs/template/secure.svg" alt="Ecom" />
+        <div class="flex items-center gap-3 border rounded-lg p-5 hover:shadow-md transition">
+          <div class="text-blue-700 text-3xl">
+            📦
           </div>
-          <div className="info-right">
-            <h5 className="font-lg-bold color-gray-100">Secure payment</h5>
-            <p className="font-sm color-gray-500">100% Protected</p>
+          <div>
+            <h3 class="font-semibold text-gray-900">Return & Refund</h3>
+            <p class="text-sm text-gray-500">Free return over $200</p>
           </div>
         </div>
-      </li>
-    </ul>
-  </div>
-</section>
+        <div class="flex items-center gap-3 border rounded-lg p-5 hover:shadow-md transition">
+          <div class="text-blue-700 text-3xl">
+            🔒
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-900">Secure payment</h3>
+            <p class="text-sm text-gray-500">100% Protected</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
   )
 }
