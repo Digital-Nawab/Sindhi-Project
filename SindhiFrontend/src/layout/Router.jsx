@@ -11,6 +11,7 @@ import Registration from '../pages/Registration';
 import Login from '../pages/Login';
 import CareerPage from '../pages/career/CareerPage';
 import CareerDetail from '../pages/career/CareerComponents/CareerDetail';
+import BecomeVender from '../pages/vender/BecomeVender';
 function Router() {
   
   return (
@@ -21,6 +22,7 @@ function Router() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/vendor" element={<Vender />} />
         <Route path="/vendor-detail" element={<VenderDetailPage />} />
+        <Route path="/become-vendor" element={<BecomeVender />} />
         <Route path="/term-condition" element={<TermConditionPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/registration" element={<Registration />} />

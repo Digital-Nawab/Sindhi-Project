@@ -2,6 +2,7 @@ import React from "react";
 import { MapPin, Phone, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 
+import { Plane, MessageCircle, RotateCcw, Shield } from "lucide-react";
 function VendorDetail() {
   const vendor = {
     name: "Fasfox Coporation",
@@ -47,8 +48,50 @@ function VendorDetail() {
       tags: ["Electronics", "Smart Devices"],
       featured: true,
     },
+    {
+      id: 3,
+      name: "ElectroHub",
+      image: "assets/images/p3.png",
+      rating: 4.8,
+      reviews: 58,
+      address: "45 Park Avenue, LA",
+      tags: ["Electronics", "Smart Devices"],
+      featured: true,
+    },
+    {
+      id: 3,
+      name: "ElectroHub",
+      image: "assets/images/p3.png",
+      rating: 4.8,
+      reviews: 58,
+      address: "45 Park Avenue, LA",
+      tags: ["Electronics", "Smart Devices"],
+      featured: true,
+    },
   ];
-
+ 
+   const highlights = [
+    {
+      icon: Plane,
+      title: "Free Delivery",
+      desc: "From all orders over $10",
+    },
+    {
+      icon: MessageCircle,
+      title: "Support 24/7",
+      desc: "Shop with an expert",
+    },
+    {
+      icon: RotateCcw,
+      title: "Return & Refund",
+      desc: "Free return over $200",
+    },
+    {
+      icon: Shield,
+      title: "Secure payment",
+      desc: "100% Protected",
+    },
+  ];
   return (
     <section className="bg-gray-50 min-h-screen py-10 px-6">
       <div className="max-w-7xl mx-auto">
@@ -62,49 +105,52 @@ function VendorDetail() {
                 alt={vendor.name}
                 className="w-full h-64 object-cover"
               />
-              {/* Logo + Products */}
-              <div className="absolute bottom-4 left-4 bg-white p-3 rounded-xl shadow-md flex items-center">
-                <img
-                  src={vendor.logo}
-                  alt={vendor.name}
-                  className="w-16 h-16 object-contain mr-3 rounded-lg"
-                />
-                <div>
-                  <h2 className="font-bold text-gray-800">{vendor.name}</h2>
-                  <span className="text-sm bg-[#053951] text-white px-3 py-1 rounded font-medium">
-                    {vendor.products} Products
-                  </span>
-                </div>
-              </div>
               {/* Vendor Info */}
-              <div className="p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mt-6">
+              <div className="p-6 grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
+                <div className="left-4 rounded-xl flex items-center">
+                  <img 
+                    src={vendor.logo}
+                    alt=""
+                    className="w-16 h-16 object-contain mr-3 rounded-lg"
+                  />
+                  <div>
+                    <span className="text-sm bg-[#053951] text-white px-3 py-1 rounded font-medium">
+                      {vendor.products} Products
+                    </span>
+                  </div>
+                </div>
                 <div>
-                  <h1 className="text-2xl font-bold text-gray-800">
+                  <h1 className="text-xl font-bold text-[#4A90A4] mb-1">
                     {vendor.name}
                   </h1>
-                  <p className="text-sm text-gray-500">
+                  <p className="text-sm text-gray-500 mb-1">
                     Member since {vendor.since}
                   </p>
-                  {/* Rating */}
-                  <div className="flex items-center mt-2">
-                    <Star className="w-4 h-4 text-yellow-500 fill-current mr-1" />
-                    <span className="text-sm text-gray-700">
-                      {vendor.rating} ({vendor.reviews})
+                  <div className="flex items-center">
+                    <div className="flex text-orange-400">
+                      {[1,2,3,4,5].map((star) => (
+                        <Star key={star} className="w-4 h-4 fill-current" />
+                      ))}
+                    </div>
+                    <span className="text-sm text-gray-700 ml-1">
+                      ({vendor.reviews})
                     </span>
+                  </div>
+                </div>
+                <div className="text-sm text-gray-600">
+                  <div className="flex items-start">
+                    <MapPin className="w-4 h-4 mr-2 text-gray-400 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-400">{vendor.address}</span>
                   </div>
                 </div>
                 <div className="text-sm text-gray-600 space-y-1">
                   <div className="flex items-center">
-                    <MapPin className="w-4 h-4 mr-2 text-gray-500" />
-                    <span>{vendor.address}</span>
+                    <Phone className="w-4 h-4 mr-2 text-gray-400" />
+                    <span className="text-gray-600">{vendor.phone1}</span>
                   </div>
                   <div className="flex items-center">
-                    <Phone className="w-4 h-4 mr-2 text-gray-500" />
-                    <span>{vendor.phone1}</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Phone className="w-4 h-4 mr-2 text-gray-500" />
-                    <span>{vendor.phone2}</span>
+                    <Phone className="w-4 h-4 mr-2 text-gray-400" />
+                    <span className="text-gray-600">{vendor.phone2}</span>
                   </div>
                 </div>
               </div>
@@ -112,47 +158,29 @@ function VendorDetail() {
 
             {/* Highlights */}
             <div className="space-y-6 p-6 bg-gray-50 rounded-r-xl">
-              {[
-                {
-                  icon: "assets/images/delivery.svg",
-                  title: "Free Delivery",
-                  desc: "From all orders over $10",
-                },
-                {
-                  icon: "assets/images/delivery.svg",
-                  title: "Support 24/7",
-                  desc: "Shop with an expert",
-                },
-                {
-                  icon: "assets/images/delivery.svg",
-                  title: "Return & Refund",
-                  desc: "Free return over $200",
-                },
-                {
-                  icon: "assets/images/delivery.svg",
-                  title: "Secure Payment",
-                  desc: "100% Protected",
-                },
-              ].map((highlight, idx) => (
-                <div key={idx} className="flex items-start space-x-3">
-                  <img
-                    src={highlight.icon}
-                    alt={highlight.title}
-                    className="w-6 h-6"
-                  />
-                  <div>
-                    <h3 className="font-semibold text-gray-800">
-                      {highlight.title}
-                    </h3>
-                    <p className="text-sm text-gray-500">{highlight.desc}</p>
-                  </div>
-                </div>
-              ))}
+      {highlights.map((highlight, idx) => {
+        const IconComponent = highlight.icon;
+        return (
+          <div key={idx} className="flex items-start space-x-3">
+            <div className="w-8 h-8 flex items-center justify-center">
+              <IconComponent className="w-6 h-6 text-blue-600" />
             </div>
+            <div>
+              <h3 className="font-semibold text-gray-800 text-base">
+                {highlight.title}
+              </h3>
+              <p className="text-sm text-gray-500 mt-1">
+                {highlight.desc}
+              </p>
+            </div>
+          </div>
+        );
+      })}
+    </div>
           </div>
         </div>
 
-        {/* Products Section */}
+        {/* Products Section (Unchanged) */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {venderCard.map((item) => (
             <div
@@ -164,7 +192,7 @@ function VendorDetail() {
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-64 object-cover"
                 />
                 <button className="absolute top-3 right-3 p-2 bg-white rounded-full shadow-md hover:bg-red-50 transition">
                   ❤️
