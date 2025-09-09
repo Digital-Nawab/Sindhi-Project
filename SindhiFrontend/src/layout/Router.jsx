@@ -19,8 +19,8 @@ function Router() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/vender" element={<Vender />} />
-        <Route path="/vender-detail" element={<VenderDetailPage />} />
+        <Route path="/vendor" element={<Vender />} />
+        <Route path="/vendor-detail" element={<VenderDetailPage />} />
         <Route path="/term-condition" element={<TermConditionPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/registration" element={<Registration />} />

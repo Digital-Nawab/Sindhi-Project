@@ -27,6 +27,9 @@ function Navbar() {
           <a href="/about" className="hover:text-[#E31E24] transition">
             About
           </a>
+          <a href="/vendor" className="hover:text-[#E31E24] transition">
+           vendor Listing
+          </a>
           <a href="/contact" className="hover:text-[#E31E24] transition">
             Contact
           </a>
@@ -36,7 +39,7 @@ function Navbar() {
             <a href="/term-condition" className="hover:text-[#E31E24]">
               Term and Condition
             </a>
-            <a href="/vender" className="hover:text-[#E31E24]">
+            <a href="/vendor" className="hover:text-[#E31E24]">
               Become a Vendor
             </a>
             <a href="/login" className="hover:text-[#E31E24]">

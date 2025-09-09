@@ -1,10 +1,14 @@
 import React from 'react'
 import Layout from '../../layout/Layout'
-import VenderList from './VenderComponents/VenderList'
+import VenderBanner from './VenderComponents/VenderBanner'
+import VenderListing from './VenderComponents/VenderListing'
+
 function Vender() {
   return (
+
     <Layout>
-       <VenderList/>
+      <VenderBanner/>
+      <VenderListing/>
     </Layout>
   )
 }
