@@ -3,20 +3,17 @@ import { Rocket, Globe } from "lucide-react";
 
 function Mission() {
   return (
-    <section className="relative bg-gray-900 text-white py-20 overflow-hidden">
-      {/* Background Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-red-900/30"></div>
-
-      <div className="container mx-auto px-6 lg:px-32 relative z-10">
+    <section className="bg-[#053951] text-white py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-16">
         {/* Section Header */}
-        <div className="text-center mb-20 max-w-3xl mx-auto">
-          <p className="text-sm uppercase tracking-widest text-red-400 font-medium mb-4 animate-fade-in">
+        <div className="text-center mb-12 max-w-4xl mx-auto">
+          <p className="text-sm font-medium tracking-wide text-cyan-300 mb-4">
             Mission & Vision
           </p>
-          <h2 className="text-4xl lg:text-5xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-red-300 animate-slide-up">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white">
             Empowering a Bold Future
           </h2>
-          <p className="mt-6 text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto animate-fade-in delay-100">
+          <p className="mt-4 text-base sm:text-lg text-gray-100 leading-7 max-w-3xl mx-auto">
             Our mission and vision are the cornerstones of our commitment to
             innovation, sustainability, and global impact, driving progress for
             communities and businesses alike.
@@ -24,30 +21,23 @@ function Mission() {
         </div>
 
         {/* Mission & Vision Cards */}
-        <div className="grid lg:grid-cols-2 gap-10 relative">
-          {/* Decorative Elements */}
-          <div className="absolute top-10 left-10 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-10 right-10 w-40 h-40 bg-red-500/10 rounded-full blur-3xl animate-pulse delay-200"></div>
-
+        <div
+          className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto"
+          role="region"
+          aria-labelledby="mission-vision-heading"
+        >
           {/* Mission Card */}
           <div
-            className="relative group bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-gray-700/50 shadow-xl 
-                          hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 
-                          hover:scale-105 hover:bg-white/10"
+            className="bg-[#053951] rounded-xl p-6 border border-gray-500 shadow-md hover:bg-teal-500/10 transition-all duration-300 focus:ring-2 focus:ring-cyan-500 focus:outline-none animate-fade-in"
+            tabIndex={0}
           >
-            <div
-              className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-red-500/10 
-                            opacity-0 group-hover:opacity-40 transition-opacity duration-500 rounded-2xl"
-            ></div>
-
-            <div className="flex items-center gap-5 mb-6 relative z-10">
-              <div className="bg-blue-600 p-3 rounded-full text-white shadow-md group-hover:shadow-lg transition duration-500">
-                <Rocket className="w-6 h-6" />
+            <div className="flex items-center gap-4 mb-4">
+              <div className="bg-cyan-500 p-2 rounded-full text-white">
+                <Rocket className="w-5 h-5" />
               </div>
-              <h3 className="text-2xl font-semibold text-white">Our Mission</h3>
+              <h3 className="text-xl font-semibold text-white">Our Mission</h3>
             </div>
-
-            <p className="text-gray-300 leading-relaxed text-base relative z-10 transition-opacity duration-500 group-hover:opacity-90">
+            <p className="text-gray-100 leading-7">
               To deliver innovative, sustainable, and client-focused solutions
               that empower businesses and communities, fostering transformative
               change and enduring value.
@@ -56,23 +46,16 @@ function Mission() {
 
           {/* Vision Card */}
           <div
-            className="relative group bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-gray-700/50 shadow-xl 
-                          hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 
-                          hover:scale-105 hover:bg-white/10"
+            className="bg-[#053951] rounded-xl p-6 border border-gray-500 shadow-md hover:bg-teal-500/10 transition-all duration-300 focus:ring-2 focus:ring-cyan-500 focus:outline-none animate-fade-in"
+            tabIndex={0}
           >
-            <div
-              className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-blue-500/10 
-                            opacity-0 group-hover:opacity-40 transition-opacity duration-500 rounded-2xl"
-            ></div>
-
-            <div className="flex items-center gap-5 mb-6 relative z-10">
-              <div className="bg-red-600 p-3 rounded-full text-white shadow-md group-hover:shadow-lg transition duration-500">
-                <Globe className="w-6 h-6" />
+            <div className="flex items-center gap-4 mb-4">
+              <div className="bg-cyan-500 p-2 rounded-full text-white">
+                <Globe className="w-5 h-5" />
               </div>
-              <h3 className="text-2xl font-semibold text-white">Our Vision</h3>
+              <h3 className="text-xl font-semibold text-white">Our Vision</h3>
             </div>
-
-            <p className="text-gray-300 leading-relaxed text-base relative z-10 transition-opacity duration-500 group-hover:opacity-90">
+            <p className="text-gray-100 leading-7">
               To lead as a global innovator, redefining industries and building
               a sustainable future where opportunities for growth and impact are
               accessible to all.
