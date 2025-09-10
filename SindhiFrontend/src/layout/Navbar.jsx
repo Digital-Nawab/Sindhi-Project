@@ -39,7 +39,7 @@ function Navbar() {
             <a href="/term-condition" className="hover:text-[#E31E24]">
               Term and Condition
             </a>
-            <a href="/vendor" className="hover:text-[#E31E24]">
+            <a href="/become-vendor" className="hover:text-[#E31E24]">
               Become a Vendor
             </a>
             <a href="/login" className="hover:text-[#E31E24]">
