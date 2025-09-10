@@ -5,6 +5,7 @@ import Hero from './aboutComponents/Hero'
 import Mission from './aboutComponents/Mission'
 import FreeDelivery from './aboutComponents/FreeDelivery'
 import KeyHighlight from './aboutComponents/KeyHighlight'
+import Entrepreneur from './aboutComponents/Entrepreneur'
 
 function About() {
   return (
@@ -14,6 +15,7 @@ function About() {
       <Mission />
       <FreeDelivery />
       <KeyHighlight />
+      <Entrepreneur/>
    </Layout>
   )
 }

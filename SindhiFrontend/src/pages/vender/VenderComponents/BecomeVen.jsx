@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+
 import {
   Building2,
   FileText,
@@ -503,19 +505,19 @@ function BecomeVen() {
                       className="text-sm text-gray-700 leading-relaxed"
                     >
                       I accept that I have read the{" "}
-                      <a
-                        href="/terms"
-                        className="text-blue-600 font-medium hover:underline transition-colors"
-                      >
-                        Terms & Conditions
-                      </a>{" "}
-                      and{" "}
-                      <a
-                        href="/privacy"
-                        className="text-blue-600 font-medium hover:underline transition-colors"
-                      >
-                        Privacy Policy
-                      </a>{" "}
+                        <Link
+                          to="/term-condition"
+                          className="text-blue-600 font-medium hover:underline transition-colors"
+                        >
+                          Terms & Conditions
+                        </Link>{" "}
+                        and{" "}
+                        <Link
+                          to="/privacy-policy"
+                          className="text-blue-600 font-medium hover:underline transition-colors"
+                        >
+                          Privacy Policy
+                        </Link>
                       and agree to them. I understand that this platform is
                       designed exclusively for the Sindhi community.
                     </label>
