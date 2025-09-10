@@ -1,14 +1,20 @@
 import React from 'react'
-import Hero from './aboutComponents/Hero'
 import Layout from '../../layout/Layout'
+import Banner from './aboutComponents/Banner'
+import Hero from './aboutComponents/Hero'
+import Mission from './aboutComponents/Mission'
 import FreeDelivery from './aboutComponents/FreeDelivery'
+import KeyHighlight from './aboutComponents/KeyHighlight'
 
 function About() {
   return (
-  <Layout>
-    <Hero />
-    <FreeDelivery />
-  </Layout>
+    <Layout> 
+      <Banner/>
+      <Hero />
+      <Mission />
+      <FreeDelivery />
+      <KeyHighlight />
+   </Layout>
   )
 }
 

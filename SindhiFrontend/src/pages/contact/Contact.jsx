@@ -1,12 +1,15 @@
 import React from 'react'
 import Layout from '../../layout/Layout'
+import Banner from './contactComponents/Banner'
 import FormMap from './contactComponents/FormMap'
-import ContactBanner from './contactComponents/ContactBanner'
+import Faq from './contactComponents/Faq'
+
 function Contact() {
   return (
     <Layout>
+       <Banner/>
        <FormMap/>
-       <ContactBanner/>
+       <Faq/>
     </Layout>
   )
 }
