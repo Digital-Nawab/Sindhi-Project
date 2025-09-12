@@ -18,21 +18,18 @@ function Navbar() {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-8 text-gray-700 font-medium">
-          <a href="/" className="hover:text-[#E31E24] transition">
-            Home
-          </a>
-          <a href="/career" className="hover:text-[#E31E24] transition">
-            Careers
-          </a>
-          <a href="/about" className="hover:text-[#E31E24] transition">
-            About
-          </a>
-          <a href="/vendor" className="hover:text-[#E31E24] transition">
-           vendor Listing
-          </a>
-          <a href="/contact" className="hover:text-[#E31E24] transition">
-            Contact
-          </a>
+            <a href="/" className="hover:text-[#E31E24] transition">
+              Home
+            </a>
+            <a href="/career" className="hover:text-[#E31E24] transition">
+              Careers
+            </a>
+            <a href="/about" className="hover:text-[#E31E24] transition">
+              About
+            </a>
+            <a href="/vendor" className="hover:text-[#E31E24] transition">
+            vendor Listing
+            </a>
            <a href="/privacy-policy" className="hover:text-[#E31E24]">
               Privacy Policy
             </a>
@@ -47,6 +44,9 @@ function Navbar() {
             </a>
             <a href="/registration" className="hover:text-[#E31E24]">
               Registration
+            </a>
+            <a href="/contact-us" className="hover:text-[#E31E24] transition">
+              Contact
             </a>
         </nav>
 
