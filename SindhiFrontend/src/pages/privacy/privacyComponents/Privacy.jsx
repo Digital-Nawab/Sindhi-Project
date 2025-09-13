@@ -3,7 +3,7 @@ import React from "react";
 function Privacy() {
   return (
     <section className="bg-gray-50 min-h-screen py-16">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-[#053951] mb-4">

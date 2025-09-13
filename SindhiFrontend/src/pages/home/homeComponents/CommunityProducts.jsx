@@ -55,7 +55,7 @@ const products = [
 function CommunityProducts() {
   return (
     <section className="bg-white pt-16 px-6">
-      <div className="max-w-7xl mx-auto">
+      <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900">
             Explore Sindhi Community Products

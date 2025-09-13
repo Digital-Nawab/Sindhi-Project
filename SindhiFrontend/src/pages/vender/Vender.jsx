@@ -7,7 +7,7 @@ function Vender() {
   return (
 
     <Layout>
-      <VenderBanner/>
+      {/* <VenderBanner/> */}
       <VenderListing/>
     </Layout>
   )

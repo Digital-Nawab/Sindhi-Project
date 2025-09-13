@@ -66,8 +66,8 @@ const jobs = [
 
 function WeAreHiring() {
   return (
-    <section className="pt-16 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-16 bg-white">
+      <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900">We Are Hiring</h1>
           <p className="mt-2 text-[#8C8C8C]">

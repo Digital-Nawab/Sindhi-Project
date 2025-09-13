@@ -4,7 +4,7 @@ import { Rocket, Globe } from "lucide-react";
 function Mission() {
   return (
     <section className="bg-gray-50 py-16 px-4">
-      <div className="max-w-7xl mx-auto">
+      <div className="container mx-auto">
         {/* Vision & Mission Badge */}
         <div className="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-md mb-8 group hover:shadow-lg transition-all duration-300">
           <div className="w-3 h-3 bg-[#E31E24] rounded-full group-hover:scale-110 transition-transform"></div>

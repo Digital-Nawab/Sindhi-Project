@@ -4,7 +4,7 @@ function Auction() {
   return (
     <>
       <section className="py-16 px-6">
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="container mx-auto text-center">
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-3xl font-semibold">
               Auction Products
