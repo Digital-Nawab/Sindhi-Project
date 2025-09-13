@@ -5,33 +5,55 @@ function Sale2() {
     <div className="bg-white py-10 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-[#FEE1DC] p-6 rounded-lg text-center">
-            <h2 className="text-xl font-semibold mb-2">Laptops Sale</h2>
-            <p className="text-sm text-gray-700 mb-4">Demo Content for Sindhi Community</p>
-            <img
-              src="assets/images/1.png"
-              alt="Laptops Sale"
-              className="mx-auto w-40"
-            />
+          
+          {/* Card 1 */}
+          <div className="bg-[#FEE1DC] p-6 rounded-lg flex flex-col justify-between h-full">
+            <div>
+              <h2 className="text-xl font-bold mb-2 text-left">Laptops Sale</h2>
+              <p className="text-sm text-gray-700 text-left">Demo Content for <br />Sindhi Community</p>
+            </div>
+            <div className="flex justify-end mt-4">
+              <img
+                src="assets/images/1.png"
+                alt="Laptops Sale"
+                className="w-48 h-auto object-contain"
+              />
+            </div>
           </div>
-          <div className="bg-gradient-to-r from-[#FFE2E7] via-[#FAD0D9] via-[#FADAE0] to-[#F8D9DF] p-6 rounded-lg text-center">
-            <h2 className="text-xl font-semibold mb-2">Find all Handicraft Items</h2>
-            <p className="text-sm text-gray-700 mb-4">Demo Content for Sindhi Community</p>
-            <img
-              src="assets/images/2.png"
-              alt="Handicraft Items"
-              className="mx-auto w-40"
-            />
+
+          {/* Card 2 */}
+          <div className="bg-[#FADADD] p-6 rounded-lg flex flex-col justify-between h-full">
+            <div>
+              <h2 className="text-xl font-bold mb-2 text-center">Find all <br/>Handicraft Items</h2>
+             
+            </div>
+            <div className="flex justify-center mt-4">
+              <img
+                src="assets/images/2.png"
+                alt="Handicraft Items"
+                className="w-40 h-auto object-contain"
+              />
+            </div>
+            <div className="">
+               <p className="text-sm text-gray-700 text-center">Demo Content for <br/> Sindhi Community</p>
+            </div>
           </div>
-          <div className="bg-[#FEE8BF] p-6 rounded-lg text-center">
-            <h2 className="text-xl font-semibold mb-2">Your Favorite Gadget</h2>
-            <p className="text-sm text-gray-700 mb-4">Demo Content for Sindhi Community</p>
-            <img
-              src="assets/images/3.png"
-              alt="Favorite Gadget"
-              className="mx-auto w-40"
-            />
+
+          {/* Card 3 */}
+          <div className="bg-[#FEE8BF] p-6 rounded-lg flex flex-col justify-between h-full">
+            <div>
+              <h2 className="text-xl font-bold mb-2 text-left">Your Favorite Gadget</h2>
+              <p className="text-sm text-gray-700 text-left">Demo Content for <br/> Sindhi Community</p>
+            </div>
+            <div className="flex justify-end mt-4">
+              <img
+                src="assets/images/3.png"
+                alt="Favorite Gadget"
+                className="w-40 h-auto object-contain"
+              />
+            </div>
           </div>
+
         </div>
       </div>
     </div>
