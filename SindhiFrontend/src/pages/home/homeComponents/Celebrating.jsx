@@ -7,24 +7,24 @@ function Celebrating() {
       title: "The Legacy of Sindhi Entrepreneurship",
       description:
         "From the partition of India to building global business empires, Sindhi entrepreneurs have shown remarkable resilience and innovation.",
-      img: "https://i.pinimg.com/736x/f5/04/0b/f5040b6df55321686d7c32c4b18d7f7e.jpg",
+      img: "assets/images/celebrating1.png",
     },
     {
       title: "Cultural Traditions That Bind Us",
       description:
         "From the partition of India to building global business empires, Sindhi entrepreneurs have shown remarkable resilience and innovation.",
-      img: "https://i.pinimg.com/736x/f5/04/0b/f5040b6df55321686d7c32c4b18d7f7e.jpg", 
+      img: "assets/images/celebrating2.png",
     },
     {
       title: "Global Sindhi Network",
       description:
         "From the partition of India to building global business empires, Sindhi entrepreneurs have shown remarkable resilience and innovation.",
-      img: "https://i.pinimg.com/736x/f5/04/0b/f5040b6df55321686d7c32c4b18d7f7e.jpg", 
+      img: "assets/images/celebrating3.png",
     },
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="pt-16 bg-white">
       {/* Heading */}
       <div className="text-center max-w-2xl mx-auto mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
@@ -41,7 +41,7 @@ function Celebrating() {
         {cards.map((card, idx) => (
           <div
             key={idx}
-            className="bg-[#fcece1] rounded-xl shadow-sm overflow-hidden hover:shadow-md transition"
+            className="bg-[#FFF3EC] rounded-xl shadow-sm overflow-hidden hover:shadow-md transition"
           >
             <img
               src={card.img}
@@ -49,10 +49,10 @@ function Celebrating() {
               className="h-56 w-full object-cover"
             />
             <div className="p-6">
-              <h3 className="text-lg font-semibold text-gray-900">
+              <h3 className="text-2xl font-semibold text-gray-900">
                 {card.title}
               </h3>
-              <p className="mt-3 text-gray-600 text-sm leading-relaxed">
+              <p className="mt-3 text-gray-900 text-md leading-relaxed">
                 {card.description}
               </p>
 

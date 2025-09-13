@@ -284,7 +284,7 @@ function CareerDetail() {
                   <ul className="space-y-3">
                     {jobDescription.requirements.map((req, idx) => (
                       <li key={idx} className="flex items-start">
-                        <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span className="w-2 h-2 bg-[#E82600] rounded-full mt-2 mr-3 flex-shrink-0"></span>
                         <span className="text-gray-700">{req}</span>
                       </li>
                     ))}

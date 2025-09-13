@@ -14,10 +14,10 @@ function Auction() {
             </a>
           </div>
 
-          <div className="bg-red-100 flex flex-col md:flex-row items-center justify-between p-6 rounded-lg">
+          <div className="bg-[#FFE9E5] flex flex-col md:flex-row items-center justify-between p-6 rounded-lg">
             <div className="w-full md:w-1/2 mb-6 md:mb-0">
               <img
-                src="https://placehold.co/400"
+                src="assets/images/auction.png"
                 alt=""
                 className="w-full max-w-sm mx-auto"
               />

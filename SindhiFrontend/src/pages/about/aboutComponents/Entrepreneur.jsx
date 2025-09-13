@@ -12,7 +12,7 @@ function SindhiEntrepreneur() {
       <div className="absolute inset-0 bg-[#0c2340]/80"></div>
 
       {/* Content */}
-      <div className="relative max-w-6xl mx-auto text-center">
+      <div className="relative max-w-7xl mx-auto text-center">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Are you a <span className="text-[#E31E24]">Sindhi Entrepreneur?</span>

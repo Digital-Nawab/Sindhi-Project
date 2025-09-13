@@ -218,7 +218,7 @@ function Career() {
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-transparent"></div>
 
-        <div className="relative container mx-auto px-6 py-20">
+        <div className="relative container mx-auto px-6 py-16">
           <div className="max-w-4xl">
             <div className="inline-block bg-blue-100 text-blue-900 px-4 py-2 rounded-full text-sm font-medium mb-6">
               We're hiring across India! 🚀
@@ -476,7 +476,7 @@ function Career() {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-gradient-to-r from-blue-900 to-indigo-900 py-20 text-white">
+      <section className="bg-gradient-to-r from-blue-900 to-indigo-900 py-16 text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Make Your Mark?
