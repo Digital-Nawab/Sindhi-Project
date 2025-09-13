@@ -23,7 +23,7 @@ function ExploreProduct() {
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
           Explore Sindhi Community Products
         </h2>
-        <p className="mt-3 text-gray-600 text-lg">
+        <p className="mt-3 text-gray-900 text-lg">
           Discover authentic products from trusted Sindhi businesses across various industries
         </p>
 
@@ -50,7 +50,7 @@ function ExploreProduct() {
 
         {/* Button */}
         <div className="mt-12">
-          <button className="px-20 py-4 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg shadow-md transition">
+          <button className="px-20 py-4 bg-[#E82600] hover:bg-red-700 text-white font-semibold rounded-lg shadow-md transition">
             View All Categories
           </button>
         </div>

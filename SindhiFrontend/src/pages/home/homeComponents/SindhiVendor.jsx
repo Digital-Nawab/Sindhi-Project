@@ -13,7 +13,7 @@ const vendors = [
     description:
       "Leading manufacturer of premium quality cotton and silk fabrics for global markets.",
     image:
-      "https://i.pinimg.com/736x/cf/f5/e1/cff5e1cba8964bcaeaee87cf0eaecb59.jpg",
+      "assets/images/vendor/1.jpg",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const vendors = [
     description:
       "Leading manufacturer of premium quality cotton and silk fabrics for global markets.",
     image:
-      "https://i.pinimg.com/736x/cf/f5/e1/cff5e1cba8964bcaeaee87cf0eaecb59.jpg",
+      "assets/images/vendor/2.jpg",
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ const vendors = [
     description:
       "Leading manufacturer of premium quality cotton and silk fabrics for global markets.",
     image:
-      "https://i.pinimg.com/736x/cf/f5/e1/cff5e1cba8964bcaeaee87cf0eaecb59.jpg",
+      "assets/images/vendor/3.jpg",
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ const vendors = [
     description:
       "Leading manufacturer of premium quality cotton and silk fabrics for global markets.",
     image:
-      "https://i.pinimg.com/736x/cf/f5/e1/cff5e1cba8964bcaeaee87cf0eaecb59.jpg",
+      "assets/images/vendor/4.jpg",
   },
   {
     id: 5,
@@ -65,7 +65,7 @@ const vendors = [
     description:
       "Leading manufacturer of premium quality cotton and silk fabrics for global markets.",
     image:
-      "https://i.pinimg.com/736x/cf/f5/e1/cff5e1cba8964bcaeaee87cf0eaecb59.jpg",
+      "assets/images/vendor/5.jpg",
   },
   {
     id: 6,
@@ -78,19 +78,19 @@ const vendors = [
     description:
       "Leading manufacturer of premium quality cotton and silk fabrics for global markets.",
     image:
-      "https://i.pinimg.com/736x/cf/f5/e1/cff5e1cba8964bcaeaee87cf0eaecb59.jpg",
+      "assets/images/vendor/6.jpg",
   },
 ];
 
 function SindhiVendor() {
   return (
-    <section className="bg-white py-16 px-6">
+    <section className="bg-white pt-16 px-6">
       <div className="max-w-7xl mx-auto text-center">
         {/* Section Header */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
           Trusted Sindhi Vendors
         </h2>
-        <p className="mt-3 text-gray-600 text-lg">
+        <p className="mt-3 text-gray-900 text-lg font-semibold">
           Connect with established Sindhi business owners and grow your network
         </p>
 
@@ -105,13 +105,13 @@ function SindhiVendor() {
                 <img
                   src={vendor.image}
                   alt={vendor.name}
-                  className="w-28 h-28 object-cover rounded-lg"
+                  className="w-32 h-24 object-cover rounded-lg"
                 />
                 <div className="flex-1 text-start">
-                  <h3 className="text-lg font-bold text-gray-900">
+                  <h3 className="text-xl font-bold text-[#000000]">
                     {vendor.name}
                   </h3>
-                  <p className="text-red-500 font-medium py-1">
+                  <p className="text-[#E82600] font-medium py-1">
                     {vendor.category}
                   </p>
                   <p className="text-gray-500 text-sm flex items-center gap-1">
@@ -122,7 +122,7 @@ function SindhiVendor() {
                     {Array.from({ length: 5 }).map((_, i) => (
                       <span
                         key={i}
-                        className={`text-yellow-400 text-lg ${
+                        className={`text-[#FFCD29] text-lg ${
                           i < Math.floor(vendor.rating) ? "" : "opacity-40"
                         }`}
                       >
@@ -135,29 +135,29 @@ function SindhiVendor() {
                   </div>
                 </div>
               </div>
-              <p className="text-gray-600 text-sm mt-4 text-left">
+              <p className="text-[#000000] text-sm mt-4 text-left">
                 {vendor.description}
               </p>
               <div className="flex items-center justify-between mt-5">
-                <div className="flex flex-col items-center bg-gray-50 p-3 rounded-lg w-1/2 mx-1">
-                  <Calendar className="w-6 h-6 text-red-500" />
+                <div className="flex flex-col items-center bg-[#F2F6FB] p-3 rounded-lg w-1/2 mx-1">
+                  <Calendar className="w-6 h-6 text-[#E82600]" />
                   <p className="font-semibold">{vendor.years}</p>
-                  <p className="text-xs text-gray-500">Years in Business</p>
+                  <p className="text-xs text-[#8C8C8C]">Years in Business</p>
                 </div>
-                <div className="flex flex-col items-center bg-gray-50 p-3 rounded-lg w-1/2 mx-1">
-                  <Package className="w-6 h-6 text-red-500" />
+                <div className="flex flex-col items-center bg-[#F2F6FB] p-3 rounded-lg w-1/2 mx-1">
+                  <Package className="w-6 h-6 text-[#E82600]" />
                   <p className="font-semibold">{vendor.products}</p>
-                  <p className="text-xs text-gray-500">Products</p>
+                  <p className="text-xs text-[#8C8C8C]">Products</p>
                 </div>
               </div>
-              <button className="mt-6 w-full border border-red-500 text-red-500 hover:bg-red-500 hover:text-white py-2 rounded-lg font-medium transition">
+              <button className="mt-6 w-full border border-[#E82600] text-[#E82600] hover:bg-[#E82600] hover:text-white py-2 rounded-lg font-medium transition">
                 View Store →
               </button>
             </div>
           ))}
         </div>
         <div className="mt-12">
-          <button className="px-20 py-4 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg shadow-md transition">
+          <button className="px-20 py-4 bg-[#E82600] hover:bg-red-700 text-white font-semibold rounded-lg shadow-md transition">
             Explore All Vendors
           </button>
         </div>

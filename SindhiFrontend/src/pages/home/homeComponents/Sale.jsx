@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 
 function Sale() {
-  // Countdown state
   const [time, setTime] = useState({
     days: 5,
-    hours: 25,
+    hours: 23, // ✅ 0–23 range
     minutes: 45,
     seconds: 59,
   });
@@ -37,47 +36,51 @@ function Sale() {
   }, []);
 
   return (
-    <section className="bg-red-600 text-white py-24">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6">
-        
-        <div className="flex justify-center md:w-1/4">
+    <section className="bg-[#E82600] text-white py-12 md:py-16">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-10 px-6">
+        {/* Image Section */}
+        <div className="flex justify-center md:w-1/2">
           <img
-            src="https://images.pexels.com/photos/5868730/pexels-photo-5868730.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+            src="assets/images/saleimage.png"
             alt="Sale"
-            className="max-h-96 object-contain"
+            className="max-h-80 md:max-h-96 object-contain"
           />
         </div>
 
-        <div className="md:w-1/2 flex flex-col items-center md:items-start mt-8 md:mt-0">
-          <div className="bg-white rounded-lg shadow-md px-24 py-10 flex gap-4">
+        {/* Timer + Text Section */}
+        <div className="md:w-1/2 flex flex-col items-center text-center">
+          {/* Countdown Timer */}
+          <div className="bg-white rounded-lg shadow-md px-6 sm:px-12 md:px-16 lg:px-24 py-6 sm:py-8 flex gap-4 sm:gap-6">
             <div className="text-center">
-              <div className="bg-red-700 text-white text-2xl font-bold px-4 py-2 rounded">
+              <div className="bg-[#A41B00] text-white text-xl sm:text-2xl font-bold px-4 py-2 rounded">
                 {String(time.days).padStart(2, "0")}
               </div>
-              <span className="text-gray-600 text-sm">Days</span>
+              <span className="text-gray-600 text-xs sm:text-sm">Days</span>
             </div>
             <div className="text-center">
-              <div className="bg-red-700 text-white text-2xl font-bold px-4 py-2 rounded">
+              <div className="bg-[#A41B00] text-white text-xl sm:text-2xl font-bold px-4 py-2 rounded">
                 {String(time.hours).padStart(2, "0")}
               </div>
-              <span className="text-gray-600 text-sm">Hours</span>
+              <span className="text-gray-600 text-xs sm:text-sm">Hours</span>
             </div>
             <div className="text-center">
-              <div className="bg-red-700 text-white text-2xl font-bold px-4 py-2 rounded">
+              <div className="bg-[#A41B00] text-white text-xl sm:text-2xl font-bold px-4 py-2 rounded">
                 {String(time.minutes).padStart(2, "0")}
               </div>
-              <span className="text-gray-600 text-sm">Minutes</span>
+              <span className="text-gray-600 text-xs sm:text-sm">Minutes</span>
             </div>
             <div className="text-center">
-              <div className="bg-red-700 text-white text-2xl font-bold px-4 py-2 rounded">
+              <div className="bg-[#A41B00] text-white text-xl sm:text-2xl font-bold px-4 py-2 rounded">
                 {String(time.seconds).padStart(2, "0")}
               </div>
-              <span className="text-gray-600 text-sm">Seconds</span>
+              <span className="text-gray-600 text-xs sm:text-sm">Seconds</span>
             </div>
           </div>
-            <p className="mt-4 text-lg font-medium text-start w-full">
-                For limited time in Flash Sale
-            </p>
+
+          {/* Text under timer */}
+          <p className="mt-4 text-base sm:text-lg font-medium text-center">
+            For limited time in Flash Sale
+          </p>
         </div>
       </div>
     </section>
