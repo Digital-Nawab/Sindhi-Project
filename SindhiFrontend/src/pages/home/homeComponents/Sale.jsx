@@ -37,7 +37,7 @@ function Sale() {
 
   return (
     <section className="bg-[#E82600] text-white py-12 md:py-16">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-10 px-6">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-10 px-6">
         {/* Image Section */}
         <div className="flex justify-center md:w-1/2">
           <img

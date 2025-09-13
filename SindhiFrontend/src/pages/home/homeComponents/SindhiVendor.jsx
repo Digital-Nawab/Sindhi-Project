@@ -85,7 +85,7 @@ const vendors = [
 function SindhiVendor() {
   return (
     <section className="bg-white pt-16 px-6">
-      <div className="max-w-7xl mx-auto text-center">
+      <div className="container mx-auto text-center">
         {/* Section Header */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
           Trusted Sindhi Vendors

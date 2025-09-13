@@ -3,7 +3,7 @@ import React from "react";
 function TermCondition() {
   return (
     <section className="bg-gray-50 flex items-center justify-center py-10 px-4">
-      <div className="max-w-7xl w-full p-6 md:p-10">
+      <div className="container w-full p-6 md:p-10">
         {/* Heading */}
         <div className="text-center mb-8">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
