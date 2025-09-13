@@ -3,7 +3,7 @@ import { Users, Laptop, BarChart3 } from "lucide-react";
 
 function Hero() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-16 bg-white">
       <div className="container mx-auto px-6 lg:px-32 flex flex-col lg:flex-row items-center gap-12">
         <div className="relative w-full lg:w-1/2 flex justify-center">
           <div className="rounded-tl-[40px] rounded-br-[40px] overflow-hidden">

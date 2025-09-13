@@ -118,7 +118,7 @@ function BecomeVen() {
         </div>
 
         <div
-          className={`relative container mx-auto px-6 py-20 text-center transition-all duration-1000 transform ${
+          className={`relative container mx-auto px-6 py-16 text-center transition-all duration-1000 transform ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
         >

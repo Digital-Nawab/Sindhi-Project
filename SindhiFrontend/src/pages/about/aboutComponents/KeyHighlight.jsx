@@ -11,7 +11,7 @@ function KeyHighlight() {
   ];
 
   return (
-    <section className="bg-gray-50 py-20">
+    <section className="bg-gray-50 py-16">
       <div className="container mx-auto px-6 lg:px-32">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-[#053951] mb-8">

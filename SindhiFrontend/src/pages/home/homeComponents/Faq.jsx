@@ -37,7 +37,7 @@ function Faq() {
   };
 
   return (
-    <section className="py-20 pb-20 bg-white">
+    <section className="pt-16 pb-16 bg-white">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-12 text-gray-900">
           Our Frequently Asked Questions

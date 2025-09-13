@@ -45,8 +45,8 @@ function ChooseYourPlan() {
   ];
 
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-6xl mx-auto px-6 text-center">
+    <section className="pt-16 bg-white">
+      <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
           Choose Your Perfect Plan
         </h2>
@@ -55,7 +55,7 @@ function ChooseYourPlan() {
           and upgrade as you scale.
         </p>
 
-        <div className="flex items-center justify-center gap-4 mt-6">
+        <div className="flex items-start justify-center gap-4 mt-6  ">
           <span
             className={`text-sm font-medium ${
               !isYearly ? "text-gray-900" : "text-gray-500"
@@ -88,14 +88,15 @@ function ChooseYourPlan() {
           {plans.map((plan, idx) => (
             <div
               key={idx}
-              className={`relative flex flex-col rounded-2xl border p-8 shadow-sm transition ${
-                plan.best
-                  ? "border-gray-300 bg-white shadow-md -translate-y-4"
-                  : "border-gray-200 bg-white"
-              }`}
+              className={`relative flex flex-col rounded-4xl border p-8 shadow-sm transition 
+        ${
+          plan.best
+            ? "border-gray-300 bg-white shadow-md -mt-8 z-10 "
+            : "border-gray-200 bg-white"
+        }`}
             >
               {plan.best && (
-                <span className="absolute top-4 right-4 bg-red-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                <span className="absolute top-4 right-4 bg-[#E82600] text-white text-xs font-semibold px-3 py-2 rounded-full">
                   Best Plan
                 </span>
               )}
@@ -121,13 +122,13 @@ function ChooseYourPlan() {
               <ul className="mt-6 space-y-3 text-left">
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-center gap-2 text-gray-700">
-                    <Check className="w-4 h-4 text-green-600" />
+                    <Check className="w-4 h-4 text-gray-900" />
                     {feature}
                   </li>
                 ))}
               </ul>
 
-              <button className="mt-6 w-full rounded-md bg-black text-white py-2 font-medium hover:bg-gray-900 transition">
+              <button className="mt-6 w-full rounded-3xl bg-black text-white py-2 font-small hover:bg-gray-900 transition">
                 Get Started
               </button>
 

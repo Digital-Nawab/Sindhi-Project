@@ -270,7 +270,7 @@ function VendorDetail() {
                     className="w-full h-48 object-cover"
                   />
                   <button className="absolute top-3 right-3 p-2 bg-white rounded-full shadow-md hover:bg-red-50 transition-colors">
-                    <Heart className="w-4 h-4 text-gray-400 hover:text-red-500" />
+                    <Heart className="w-4 h-4 text-gray-400 hover:text-[#E82600]" />
                   </button>
                   <div className="absolute top-3 left-3 bg-[#053951] text-white px-2 py-1 rounded text-xs font-semibold">
                       ★
@@ -340,7 +340,7 @@ function VendorDetail() {
                       className="w-48 h-32 object-cover rounded-lg"
                     />
                     <button className="absolute top-2 right-2 p-2 bg-white rounded-full shadow-md hover:bg-red-50 transition-colors">
-                      <Heart className="w-4 h-4 text-gray-400 hover:text-red-500" />
+                      <Heart className="w-4 h-4 text-gray-400 hover:text-[#E82600]" />
                     </button>
                   </div>
 
