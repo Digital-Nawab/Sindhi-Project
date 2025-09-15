@@ -26,10 +26,10 @@ function Hero() {
 
         {/* Right Content Section */}
         <div className="lg:w-1/2">
-          <p className="text-sm text-[#053951] font-medium mb-2">
+          <p className="text-sm text-[#E31E24] font-medium mb-2">
             About Company
           </p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-snug">
+          <h2 className="text-3xl lg:text-4xl font-bold text-[#000000] mb-6 leading-snug">
             We Are The Best Online <br /> Payment Gateway Agency
           </h2>
           <p className="text-gray-600 mb-8">
@@ -43,11 +43,11 @@ function Hero() {
           <div className="space-y-6">
             {/* Feature 1 */}
             <div className="flex items-start gap-4">
-              <span className="bg-purple-100 text-[#053951] p-3 rounded-full">
+              <span className="bg-purple-100 text-[#E31E24] p-3 rounded-full">
                 <Users className="w-6 h-6" />
               </span>
               <div>
-                <h4 className="font-semibold text-gray-900">Trusted Partner</h4>
+                <h4 className="font-semibold text-[#000000]">Trusted Partner</h4>
                 <p className="text-gray-600 text-sm">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore eius.
@@ -57,11 +57,11 @@ function Hero() {
 
             {/* Feature 2 */}
             <div className="flex items-start gap-4">
-              <span className="bg-purple-100 text-[#053951] p-3 rounded-full">
+              <span className="bg-purple-100 text-[#E31E24] p-3 rounded-full">
                 <Laptop className="w-6 h-6" />
               </span>
               <div>
-                <h4 className="font-semibold text-gray-900">
+                <h4 className="font-semibold text-[#000000]">
                   Fastpace Platform
                 </h4>
                 <p className="text-gray-600 text-sm">
@@ -73,11 +73,11 @@ function Hero() {
 
             {/* Feature 3 */}
             <div className="flex items-start gap-4">
-              <span className="bg-purple-100 text-[#053951] p-3 rounded-full">
+              <span className="bg-purple-100 text-[#E31E24] p-3 rounded-full">
                 <BarChart3 className="w-6 h-6" />
               </span>
               <div>
-                <h4 className="font-semibold text-gray-900">
+                <h4 className="font-semibold text-[#000000]">
                   Tested Reliability
                 </h4>
                 <p className="text-gray-600 text-sm">

@@ -7,7 +7,7 @@ function Sale2() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           
           {/* Card 1 */}
-          <div className="bg-[#FEE1DC] p-6 rounded-lg flex flex-col justify-between h-full">
+          <div className="bg-[#FEE1DC] px-6 pt-6 rounded-lg flex flex-col justify-between h-full">
             <div>
               <h2 className="text-xl font-bold mb-2 text-left">Laptops Sale</h2>
               <p className="text-sm text-gray-700 text-left">Demo Content for <br />Sindhi Community</p>
@@ -22,7 +22,7 @@ function Sale2() {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-[#FADADD] p-6 rounded-lg flex flex-col justify-between h-full">
+          <div className="bg-[#FADADD] px-6 py-6 rounded-lg flex flex-col justify-between h-full">
             <div>
               <h2 className="text-xl font-bold mb-2 text-center">Find all <br/>Handicraft Items</h2>
              
@@ -31,7 +31,7 @@ function Sale2() {
               <img
                 src="assets/images/2.png"
                 alt="Handicraft Items"
-                className="w-40 h-auto object-contain"
+                className="w-48 h-auto object-contain"
               />
             </div>
             <div className="">
@@ -40,7 +40,7 @@ function Sale2() {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-[#FEE8BF] p-6 rounded-lg flex flex-col justify-between h-full">
+          <div className="bg-[#FEE8BF] px-6 pt-6 rounded-lg flex flex-col justify-between h-full">
             <div>
               <h2 className="text-xl font-bold mb-2 text-left">Your Favorite Gadget</h2>
               <p className="text-sm text-gray-700 text-left">Demo Content for <br/> Sindhi Community</p>
@@ -49,7 +49,7 @@ function Sale2() {
               <img
                 src="assets/images/3.png"
                 alt="Favorite Gadget"
-                className="w-40 h-auto object-contain"
+                className="w-48 h-auto object-contain"
               />
             </div>
           </div>

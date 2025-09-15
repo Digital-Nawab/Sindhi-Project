@@ -94,7 +94,7 @@ function Footer() {
               <div className="flex justify-center">
                 <button
                   type="submit"
-                  className="bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-6 rounded transition"
+                  className="bg-[#E82600] hover:bg-red-700 text-white font-medium py-2 px-6 rounded transition"
                 >
                   Submit
                 </button>

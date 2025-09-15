@@ -411,7 +411,7 @@ function VendorListing() {
                         </div>
                       </div>
 
-                      <p className="text-red-600 font-medium mb-2">{vendor.category}</p>
+                      <p className="text-[#E82600] font-medium mb-2">{vendor.category}</p>
                       
                       <div className="flex items-center text-gray-600 mb-3">
                         <MapPin className="w-4 h-4 mr-1" />
@@ -424,23 +424,23 @@ function VendorListing() {
 
                       <div className="flex justify-between mb-4">
                         <div className="text-center bg-gray-50 rounded-lg p-2 flex-1 mx-1">
-                          <Calendar className="w-5 h-5 text-red-600 mx-auto mb-1" />
+                          <Calendar className="w-5 h-5 text-[#E82600] mx-auto mb-1" />
                           <p className="font-semibold text-sm">{vendor.years}</p>
                           <p className="text-xs text-gray-600">Years</p>
                         </div>
                         <div className="text-center bg-gray-50 rounded-lg p-2 flex-1 mx-1">
-                          <Package className="w-5 h-5 text-red-600 mx-auto mb-1" />
+                          <Package className="w-5 h-5 text-[#E82600] mx-auto mb-1" />
                           <p className="font-semibold text-sm">{vendor.products}</p>
                           <p className="text-xs text-gray-600">Products</p>
                         </div>
                         <div className="text-center bg-gray-50 rounded-lg p-2 flex-1 mx-1">
-                          <Users className="w-5 h-5 text-red-600 mx-auto mb-1" />
+                          <Users className="w-5 h-5 text-[#E82600] mx-auto mb-1" />
                           <p className="font-semibold text-sm">{vendor.employees}</p>
                           <p className="text-xs text-gray-600">Team</p>
                         </div>
                       </div>
 
-                      <button className="w-full bg-red-600 hover:bg-red-700 text-white py-2 rounded-lg font-medium transition-colors">
+                      <button className="w-full bg-[#E82600] hover:bg-red-700 text-white py-2 rounded-lg font-medium transition-colors">
                         View Details →
                       </button>
                     </div>
@@ -472,7 +472,7 @@ function VendorListing() {
                         <div className="flex justify-between items-start mb-2">
                           <div>
                             <h3 className="text-xl font-bold text-gray-900">{vendor.name}</h3>
-                            <p className="text-red-600 font-medium">{vendor.category}</p>
+                            <p className="text-[#E82600] font-medium">{vendor.category}</p>
                           </div>
                           <div className="flex items-center gap-2">
                             <div className="flex items-center gap-1">
@@ -487,7 +487,7 @@ function VendorListing() {
                               <Heart
                                 className={`w-4 h-4 ${
                                   favorites.has(vendor.id)
-                                    ? "text-red-500 fill-current"
+                                    ? "text-[#E82600] fill-current"
                                     : "text-gray-400"
                                 }`}
                               />
@@ -513,7 +513,7 @@ function VendorListing() {
                             <span>{vendor.products} products</span>
                             <span>{vendor.employees} employees</span>
                           </div>
-                          <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+                          <button className="bg-[#E82600] hover:bg-red-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
                             View Details →
                           </button>
                         </div>

@@ -8,7 +8,7 @@ function Mission() {
         {/* Vision & Mission Badge */}
         <div className="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-md mb-8 group hover:shadow-lg transition-all duration-300">
           <div className="w-3 h-3 bg-[#E31E24] rounded-full group-hover:scale-110 transition-transform"></div>
-          <span className="text-gray-700 text-sm font-semibold">
+          <span className="text-[#E31E24] text-sm font-semibold">
             Mission & Vision
           </span>
         </div>
