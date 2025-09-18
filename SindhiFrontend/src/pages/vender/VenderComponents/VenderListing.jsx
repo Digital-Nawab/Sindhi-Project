@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   MapPin,
   Phone,
@@ -389,7 +390,7 @@ function VendorListing() {
                         <Heart
                           className={`w-4 h-4 ${
                             favorites.has(vendor.id)
-                              ? "text-red-500 fill-current"
+                              ? "text-[#E82600] fill-current"
                               : "text-gray-400"
                           }`}
                         />
@@ -439,10 +440,11 @@ function VendorListing() {
                           <p className="text-xs text-gray-600">Team</p>
                         </div>
                       </div>
-
-                      <button className="w-full bg-[#E82600] hover:bg-red-700 text-white py-2 rounded-lg font-medium transition-colors">
-                        View Details →
-                      </button>
+                       <Link to="/vendor-detail" className="">
+                        <button className="w-full bg-[#E82600] hover:bg-red-700 text-white py-2 rounded-lg font-medium transition-colors">
+                          View Details →
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 ))}
@@ -508,14 +510,16 @@ function VendorListing() {
                         <p className="text-gray-700 text-sm mb-4">{vendor.description}</p>
 
                         <div className="flex items-center justify-between">
-                          <div className="flex items-center gap-4 text-sm text-gray-600">
+                          <div className="flex items-center gap-4 text-sm text-[#E82600]">
                             <span>{vendor.years} years experience</span>
                             <span>{vendor.products} products</span>
                             <span>{vendor.employees} employees</span>
                           </div>
-                          <button className="bg-[#E82600] hover:bg-red-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
-                            View Details →
-                          </button>
+                           <Link to="/vendor-detail" className="">
+                            <button className="bg-[#E82600] hover:bg-red-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+                              View Details →
+                            </button>
+                          </Link>
                         </div>
                       </div>
                     </div>

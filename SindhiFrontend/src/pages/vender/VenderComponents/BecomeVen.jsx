@@ -143,11 +143,11 @@ function BecomeVen() {
 
           <div className="flex flex-wrap items-center justify-center gap-8 text-blue-100 mb-8">
             <div className="flex items-center gap-2 bg-white bg-opacity-10 rounded-full px-4 py-2">
-              <Star className="w-5 h-5 text-blue-900" />
+              <Star className="w-5 h-5 text-[#E82600]" />
               <span className="font-medium text-black">8,500+ Sindhi Vendors</span>
             </div>
             <div className="flex items-center gap-2 bg-white bg-opacity-10 rounded-full px-4 py-2">
-              <TrendingUp className="w-5 h-5 text-blue-900" />
+              <TrendingUp className="w-5 h-5 text-[#E82600]" />
               <span className="font-medium text-black">₹450+ Crores Annual Sales</span>
             </div>
           </div>
@@ -156,7 +156,7 @@ function BecomeVen() {
             <button className="bg-blue-400 text-red-800 px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-300 transform hover:scale-105 transition-all duration-300 shadow-lg">
               Register Now 🚀
             </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-blue-900 transition-all duration-300">
+            <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-[#E82600] transition-all duration-300">
               Learn More 📖
             </button>
           </div>
@@ -185,7 +185,7 @@ function BecomeVen() {
                 style={{ animationDelay: `${idx * 150}ms` }}
               >
                 <div className="bg-gradient-to-br from-blue-50 to-red-50 rounded-2xl p-6 hover:shadow-lg border border-blue-100">
-                  <h3 className="text-2xl md:text-3xl font-bold text-blue-900 mb-2">
+                  <h3 className="text-2xl md:text-3xl font-bold text-[#E82600] mb-2">
                     {stat.number}
                   </h3>
                   <p className="font-semibold text-gray-900 mb-1 text-sm md:text-base">
@@ -215,12 +215,12 @@ function BecomeVen() {
             {benefits.map((benefit, idx) => (
               <div
                 key={idx}
-                className={`bg-white p-6 rounded-xl shadow-sm hover:shadow-lg border-l-4 border-blue-500 hover:border-red-500 transition-all duration-300 hover:scale-105 transform ${
+                className={`bg-white p-6 rounded-xl shadow-sm hover:shadow-lg border-l-4 border-[#E82600] hover:border-red-500 transition-all duration-300 hover:scale-105 transform ${
                   isVisible ? "animate-slideInUp" : ""
                 }`}
                 style={{ animationDelay: `${idx * 200}ms` }}
               >
-                <div className="text-blue-600 mb-4">{benefit.icon}</div>
+                <div className="text-[#E82600] mb-4">{benefit.icon}</div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   {benefit.title}
                 </h3>
@@ -247,7 +247,7 @@ function BecomeVen() {
             {testimonials.map((testimonial, idx) => (
               <div
                 key={idx}
-                className={`bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl shadow-sm hover:shadow-lg border-l-4 border-blue-500 transition-all duration-300 hover:scale-105 transform ${
+                className={`bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl shadow-sm hover:shadow-lg border-l-4 text-[#E82600] transition-all duration-300 hover:scale-105 transform ${
                   isVisible ? "animate-slideInUp" : ""
                 }`}
                 style={{ animationDelay: `${idx * 250}ms` }}
@@ -306,12 +306,12 @@ function BecomeVen() {
               </div>
 
               {/* Important Terms */}
-              <div className="bg-gradient-to-r from-blue-100 to-red-100 border-l-4 border-blue-500 p-6 rounded-lg mb-8 hover:shadow-md transition-shadow">
-                <h3 className="font-semibold text-blue-800 mb-3 flex items-center gap-2">
+              <div className="bg-gradient-to-r from-blue-100 to-red-100 border-l-4 text-[#E82600] p-6 rounded-lg mb-8 hover:shadow-md transition-shadow">
+                <h3 className="font-semibold text-[#E82600] mb-3 flex items-center gap-2">
                   <Shield className="w-5 h-5" />
                   Special Terms for Sindhi Community
                 </h3>
-                <div className="grid md:grid-cols-2 gap-4 text-blue-700 text-sm">
+                <div className="grid md:grid-cols-2 gap-4 text-[#E82600] text-sm">
                   <ul className="space-y-2">
                     <li>
                       • <strong>Commission:</strong> Only 2-4% per transaction
@@ -351,7 +351,7 @@ function BecomeVen() {
                       Business Name *
                     </label>
                     <div className="relative">
-                      <Building2 className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-blue-400 group-hover:text-blue-600 transition-colors" />
+                      <Building2 className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-[#E82600] group-hover:text-[#E82600] transition-colors" />
                       <input
                         type="text"
                         placeholder="Enter your business name"
@@ -365,7 +365,7 @@ function BecomeVen() {
                       GST Number - Optional
                     </label>
                     <div className="relative">
-                      <FileText className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-blue-400 group-hover:text-blue-600 transition-colors" />
+                      <FileText className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-[#E82600] group-hover:text-[#E82600] transition-colors" />
                       <input
                         type="text"
                         placeholder="Enter GST number (if available)"
@@ -380,7 +380,7 @@ function BecomeVen() {
                     Complete Address *
                   </label>
                   <div className="relative">
-                    <MapPin className="absolute left-3 top-3 w-5 h-5 text-blue-400 group-hover:text-blue-600 transition-colors" />
+                    <MapPin className="absolute left-3 top-3 w-5 h-5 text-[#E82600] group-hover:text-[#E82600] transition-colors" />
                     <textarea
                       rows="3"
                       placeholder="Enter complete address with city and pin code"
@@ -394,7 +394,7 @@ function BecomeVen() {
                     Owner Name *
                   </label>
                   <div className="relative">
-                    <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-blue-400 group-hover:text-blue-600 transition-colors" />
+                    <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-[#E82600] group-hover:text-[#E82600] transition-colors" />
                     <input
                       type="text"
                       placeholder="Enter owner's full name"
@@ -420,7 +420,7 @@ function BecomeVen() {
                       </select>
                       <div className="absolute inset-y-0 right-3 flex items-center pointer-events-none">
                         <svg
-                          className="w-5 h-5 text-blue-400"
+                          className="w-5 h-5 text-[#E82600]"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -459,7 +459,7 @@ function BecomeVen() {
                       </select>
                       <div className="absolute inset-y-0 right-3 flex items-center pointer-events-none">
                         <svg
-                          className="w-5 h-5 text-blue-400"
+                          className="w-5 h-5 text-[#E82600]"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -481,7 +481,7 @@ function BecomeVen() {
                     Tell us about your business
                   </label>
                   <div className="relative">
-                    <ClipboardList className="absolute left-3 top-3 w-5 h-5 text-blue-400 group-hover:text-blue-600 transition-colors" />
+                    <ClipboardList className="absolute left-3 top-3 w-5 h-5 text-[#E82600] group-hover:text-[#E82600] transition-colors" />
                     <textarea
                       rows="5"
                       placeholder="Tell us about your business, products, experience..."

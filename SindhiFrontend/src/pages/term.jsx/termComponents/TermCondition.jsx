@@ -6,7 +6,7 @@ function TermCondition() {
       <div className="container w-full p-6 md:p-10">
         {/* Heading */}
         <div className="text-center mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
+          <h1 className="text-3xl md:text-4xl font-bold text-[#000000]">
             Terms of Service
           </h1>
           <p className="text-gray-600 mt-3 text-sm md:text-base leading-relaxed max-w-3xl mx-auto">
@@ -20,7 +20,7 @@ function TermCondition() {
         <div className="space-y-8 text-gray-700 text-sm md:text-base leading-relaxed">
           {/* Introduction */}
           <div>
-            <h2 className="text-xl font-semibold text-gray-900 mb-2">
+            <h2 className="text-xl font-semibold text-[#000000] mb-2">
               1. Introduction
             </h2>
             <p>
@@ -34,7 +34,7 @@ function TermCondition() {
 
           {/* User Responsibilities */}
           <div>
-            <h2 className="text-xl font-semibold text-gray-900 mb-2">
+            <h2 className="text-xl font-semibold text-[#000000] mb-2">
               2. User Responsibilities
             </h2>
             <ul className="list-disc list-inside space-y-2">
@@ -56,7 +56,7 @@ function TermCondition() {
 
           {/* Intellectual Property */}
           <div>
-            <h2 className="text-xl font-semibold text-gray-900 mb-2">
+            <h2 className="text-xl font-semibold text-[#000000] mb-2">
               3. Intellectual Property
             </h2>
             <p>
@@ -70,7 +70,7 @@ function TermCondition() {
 
           {/* Termination */}
           <div>
-            <h2 className="text-xl font-semibold text-gray-900 mb-2">
+            <h2 className="text-xl font-semibold text-[#000000] mb-2">
               4. Termination
             </h2>
             <p>
@@ -83,7 +83,7 @@ function TermCondition() {
 
           {/* Limitation of Liability */}
           <div>
-            <h2 className="text-xl font-semibold text-gray-900 mb-2">
+            <h2 className="text-xl font-semibold text-[#000000] mb-2">
               5. Limitation of Liability
             </h2>
             <p>
@@ -96,7 +96,7 @@ function TermCondition() {
 
           {/* Governing Law */}
           <div>
-            <h2 className="text-xl font-semibold text-gray-900 mb-2">
+            <h2 className="text-xl font-semibold text-[#000000] mb-2">
               6. Governing Law
             </h2>
             <p>

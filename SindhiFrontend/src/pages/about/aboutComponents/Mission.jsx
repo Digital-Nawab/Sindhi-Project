@@ -7,8 +7,8 @@ function Mission() {
       <div className="container mx-auto">
         {/* Vision & Mission Badge */}
         <div className="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-md mb-8 group hover:shadow-lg transition-all duration-300">
-          <div className="w-3 h-3 bg-[#E31E24] rounded-full group-hover:scale-110 transition-transform"></div>
-          <span className="text-[#E31E24] text-sm font-semibold">
+          <div className="w-3 h-3 bg-[#E82600] rounded-full group-hover:scale-110 transition-transform"></div>
+          <span className="text-[#E82600] text-sm font-semibold">
             Mission & Vision
           </span>
         </div>
@@ -33,10 +33,7 @@ function Mission() {
               communities and businesses alike.
             </p>
           </div>
-
-          {/* Right Column - Vision and Mission Cards */}
           <div className="space-y-6">
-            {/* Vision Card */}
             <div
               className="bg-[#053951] rounded-2xl p-8 relative overflow-hidden group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:bg-gradient-to-br hover:from-[#053951] hover:to-[#0A6B8C] focus:ring-2 focus:ring-[#053951] focus:outline-none"
               tabIndex={0}
@@ -53,7 +50,7 @@ function Mission() {
                   </p>
                 </div>
                 <div className="flex-shrink-0">
-                  <div className="w-14 h-14 bg-[#E31E24] rounded-2xl flex items-center justify-center group-hover:bg-[#E31E24]/80 transition-colors duration-300">
+                  <div className="w-14 h-14 bg-[#E82600] rounded-2xl flex items-center justify-center group-hover:bg-[#E82600]/80 transition-colors duration-300">
                     <Globe className="w-7 h-7 text-white" />
                   </div>
                 </div>
@@ -62,7 +59,7 @@ function Mission() {
 
             {/* Mission Card */}
             <div
-              className="bg-[#E31E24] rounded-2xl p-8 relative overflow-hidden group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:bg-gradient-to-br hover:from-[#E31E24] hover:to-[#FF4D4F] focus:ring-2 focus:ring-[#E31E24] focus:outline-none"
+              className="bg-[#E82600] rounded-2xl p-8 relative overflow-hidden group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:bg-gradient-to-br hover:from-[#E82600] hover:to-[#FF4D4F] focus:ring-2 focus:ring-[#E82600] focus:outline-none"
               tabIndex={0}
             >
               <div className="flex justify-between items-start relative">

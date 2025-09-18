@@ -238,7 +238,7 @@ function VendorDetail() {
                 onClick={() => setIsFavorited(!isFavorited)}
                 className={`p-2 rounded-lg transition-colors ${
                   isFavorited
-                    ? "bg-red-50 text-red-600"
+                    ? "bg-red-50 text-[#E82600]"
                     : "hover:bg-gray-100 text-gray-600"
                 }`}
               >
@@ -355,13 +355,13 @@ function VendorDetail() {
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <div className="flex items-center gap-6 mb-8">
                 <div className="p-4 rounded-2xl bg-red-50">
-                  <Factory className="w-12 h-12 text-red-600" />
+                  <Factory className="w-12 h-12 text-[#E82600]" />
                 </div>
                 <div className="flex-1">
                   <h2 className="text-3xl font-bold text-gray-900 mb-2">
                     {vendor.name}
                   </h2>
-                  <p className="text-xl text-red-600 font-medium mb-4">
+                  <p className="text-xl text-[#E82600] font-medium mb-4">
                     {vendor.category}
                   </p>
 
@@ -438,7 +438,7 @@ function VendorDetail() {
                       onClick={() => setSelectedTab(tab.id)}
                       className={`py-4 px-1 border-b-2 font-medium text-sm transition-colors ${
                         selectedTab === tab.id
-                          ? "border-red-500 text-red-600"
+                          ? "border-red-500 text-[#E82600]"
                           : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"
                       }`}
                     >
@@ -588,7 +588,7 @@ function VendorDetail() {
                     <h3 className="text-xl font-bold text-gray-900">
                       Customer Reviews
                     </h3>
-                    <button className="text-red-600 hover:text-red-700 font-medium">
+                    <button className="text-[#E82600] hover:text-red-700 font-medium">
                       Write Review
                     </button>
                   </div>
@@ -757,12 +757,12 @@ function VendorDetail() {
               <div className="space-y-3">
                 <button
                   onClick={() => setShowContactForm(!showContactForm)}
-                  className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-4 rounded-xl transition-colors flex items-center justify-center gap-2"
+                  className="w-full bg-[#E82600] hover:bg-red-700 text-white font-semibold py-3 px-4 rounded-xl transition-colors flex items-center justify-center gap-2"
                 >
                   <MessageCircle className="w-4 h-4" />
                   Contact Vendor
                 </button>
-                <button className="w-full border border-red-600 text-red-600 hover:bg-red-50 font-semibold py-3 px-4 rounded-xl transition-colors flex items-center justify-center gap-2">
+                <button className="w-full border border-[#E82600] text-[#E82600] hover:bg-red-50 font-semibold py-3 px-4 rounded-xl transition-colors flex items-center justify-center gap-2">
                   <Phone className="w-4 h-4" />
                   Request Call Back
                 </button>
@@ -775,24 +775,24 @@ function VendorDetail() {
                     <input
                       type="text"
                       placeholder="Your Name"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#E82600]"
                     />
                     <input
                       type="email"
                       placeholder="Your Email"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#E82600]"
                     />
                     <input
                       type="text"
                       placeholder="Product/Service Required"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#E82600]"
                     />
                     <textarea
                       placeholder="Detailed requirements..."
                       rows="4"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#E82600]"
                     />
-                    <button className="w-full bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                    <button className="w-full bg-[#E82600] hover:bg-red-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">
                       Send Inquiry
                     </button>
                   </div>
@@ -913,7 +913,7 @@ function VendorDetail() {
                   </div>
                 ))}
               </div>
-              <button className="w-full mt-4 text-red-600 hover:text-red-700 font-medium text-sm">
+              <button className="w-full mt-4 text-[#E82600] hover:text-red-700 font-medium text-sm">
                 View All Similar Vendors
               </button>
             </div>

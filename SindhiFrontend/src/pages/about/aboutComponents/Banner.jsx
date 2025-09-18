@@ -4,7 +4,6 @@ function Banner() {
   return (
    <section className="relative w-full min-h-[300px] flex items-center justify-center bg-gradient-to-r from-[#053951] via-[#1e3a8a] to-[#0ea5e9]">
       <div className="absolute inset-0 bg-black opacity-30"></div>
-
       {/* Content */}
       <div className="relative text-center px-6 text-white max-w-3xl">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
