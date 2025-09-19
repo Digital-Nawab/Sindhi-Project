@@ -12,13 +12,13 @@ import { ChevronDown, Menu, Search, User } from "lucide-react";
 function Navbar() {
   return (
     <header className="bg-white shadow">
-
+      {/* 🔹 Top Navbar */}
       <div className="border-b">
-        <div className="max-w-7xl mx-auto flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-8xl mx-auto flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
           {/* Logo */}
           <div className="flex-shrink-0">
             <img
-              src="assets/images/logo.png"
+              src="assets/images/logo2.png"
               alt="Logo"
               className="h-8 w-auto"
             />
@@ -66,8 +66,11 @@ function Navbar() {
                 placeholder="Search for product, service, vendors..."
               />
             </div>
+
+            {/* Divider */}
             <div className="h-6 w-px bg-gray-300" />
 
+            {/* Buttons */}
             <Button className="bg-red-600 text-white py-5">Free Listing</Button>
             <Button className="bg-black text-white py-5">We Are Hiring</Button>
             <Button
@@ -78,7 +81,9 @@ function Navbar() {
             </Button>
           </div>
 
+          {/* 🔹 Mobile Menu */}
           <div className="md:hidden flex items-center space-x-3">
+            {/* Search in drawer */}
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="ghost" className="p-0">
@@ -136,6 +141,8 @@ function Navbar() {
           </div>
         </div>
       </div>
+
+      {/* 🔹 Bottom Navbar (Gray Background) */}
       <div className="bg-[#2f2f2f] text-white">
         <div className="max-w-7xl mx-auto flex items-center space-x-6 h-15 px-4 sm:px-4 lg:px-8 overflow-x-auto text-sm sm:text-base">
           <DropdownMenu>

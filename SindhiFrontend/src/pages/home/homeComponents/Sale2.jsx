@@ -16,7 +16,7 @@ function Sale2() {
               <img
                 src="assets/images/1.png"
                 alt="Laptops Sale"
-                className="w-48 h-auto object-contain"
+                className="w-48 h-48 object-contain"
               />
             </div>
           </div>
@@ -49,7 +49,7 @@ function Sale2() {
               <img
                 src="assets/images/3.png"
                 alt="Favorite Gadget"
-                className="w-48 h-auto object-contain"
+                className="w-48 h-48 object-contain"
               />
             </div>
           </div>
