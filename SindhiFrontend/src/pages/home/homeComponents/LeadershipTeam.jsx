@@ -4,7 +4,7 @@ import { Youtube, Facebook, Linkedin } from "lucide-react";
 const LeadershipTeam = () => {
   return (
     <div className="w-full bg-[#053951] text-white">
-      <div className="max-w-7xl mx-auto px-6 py-16">
+      <div className="container mx-auto px-6 py-16">
         {/* Header Section */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -27,7 +27,7 @@ const LeadershipTeam = () => {
                   alt="Amit Hirwani"
                   className="w-48 h-48 rounded-2xl object-cover mx-auto mb-4"
                 />
-                <div className="inline-block bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-medium">
+                <div className="inline-block bg-[#CCDEFF] text-[#0250DF] px-4 py-2 rounded-full text-sm font-medium">
                   Founder & Chairman
                 </div>
               </div>
