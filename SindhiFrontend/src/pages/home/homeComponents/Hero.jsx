@@ -51,7 +51,7 @@ function Hero() {
   ];
 
   return (
-    <div className="w-full bg-white py-16 px-6 overflow-hidden">
+    <div className="w-full bg-white py-16 px-6 overflow-hidden shadow-2xl border">
       <div className="container mx-auto">
         <div className="grid grid-cols-5 gap-6 mb-15">
           {/* Left Column - Main Slider */}
