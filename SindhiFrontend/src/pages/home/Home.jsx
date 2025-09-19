@@ -42,7 +42,7 @@ function Home() {
       <CommunityService />
       <OurLeader />
       <SewaInitiative />
-      <ExploreProduct />
+      {/* <ExploreProduct />
       <Sale />
       <CommunityProducts />
       <SindhiVendor />
@@ -52,8 +52,8 @@ function Home() {
       <ChooseYourPlan />
       <Auction />
       <WeAreHiring />
-      <Celebrating />
-      <Faq />
+      <Celebrating /> */}
+      {/* <Faq /> */}
     </Layout>
   );
 }
