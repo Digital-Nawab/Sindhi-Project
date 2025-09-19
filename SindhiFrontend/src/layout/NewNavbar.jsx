@@ -9,7 +9,7 @@ function NewNavbar() {
     <nav className="bg-white shadow-md sticky top-0 z-50">
       {/* 🔹 Top Info Bar */}
       <div className="bg-gray-100 border-b">
-        <div className="max-w-7xl mx-auto px-4 py-2 text-sm text-gray-600">
+        <div className="container mx-auto px-4 py-2 text-sm text-gray-600">
           {/* ✅ Mobile Layout */}
           <div className="flex flex-col items-center md:hidden space-y-2 text-center">
             <span className="flex items-center space-x-1">

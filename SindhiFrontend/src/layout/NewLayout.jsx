@@ -1,18 +1,18 @@
 import React , {useEffect} from "react";
 import Footer from "./Footer";
-import NewNavbar from "./NewNavbar";
+import Navbar from "./Navbar";
 
-function Layout({ children }) {
+function NewLayout({ children }) {
   useEffect (() => {
    window.scrollTo(0,0)
   },[])
   return (
     <div>
-      <NewNavbar />
+      <Navbar />
       <main className="main">{children}</main>
       <Footer />
     </div>
   );
 }
 
-export default Layout;
+export default NewLayout;

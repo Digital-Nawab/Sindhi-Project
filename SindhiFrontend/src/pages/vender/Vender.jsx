@@ -1,15 +1,15 @@
 import React from 'react'
-import Layout from '../../layout/Layout'
+import NewLayout from '../../layout/NewLayout'
 // import VenderBanner from './VenderComponents/VenderBanner'
 import VenderListing from './VenderComponents/VenderListing'
 
 function Vender() {
   return (
 
-    <Layout>
+    <NewLayout>
       {/* <VenderBanner/> */}
       <VenderListing/>
-    </Layout>
+    </NewLayout>
   )
 }
 

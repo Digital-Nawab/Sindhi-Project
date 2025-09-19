@@ -23,7 +23,7 @@ import {
   Briefcase,
   CheckCircle 
 } from "lucide-react";
-import Layout from "../../layout/Layout";
+import NewLayout from "../../layout/NewLayout";
 import { ArrowRight, Shield, Zap } from "lucide-react";
 
 function Services() {
@@ -261,7 +261,7 @@ function Services() {
   };
 
   return (
-    <Layout>
+    <NewLayout>
       <div className="min-h-screen bg-gray-50">
         {/* Hero Section */}
         <section className="bg-white py-16 lg:py-24">
@@ -613,7 +613,7 @@ function Services() {
           </div>
         </section>
       </div>
-    </Layout>
+    </NewLayout>
   );
 }
 

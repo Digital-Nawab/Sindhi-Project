@@ -1,12 +1,12 @@
 import React from 'react'
-import Layout from '../../layout/Layout';
+import NewLayout from '../../layout/NewLayout';
 import VenderDetail from './VenderComponents/VenderDetail';
 
 function VenderDetailPage() {
   return (
-    <Layout>
+    <NewLayout>
         <VenderDetail/>
-    </Layout>
+    </NewLayout>
   )
 }
 
