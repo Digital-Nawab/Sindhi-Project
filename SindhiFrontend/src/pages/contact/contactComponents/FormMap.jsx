@@ -18,11 +18,11 @@ function FormMap() {
       {/* Address */}
       <div className="relative bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition flex flex-col">
         {/* Icon Tab */}
-        <div className="absolute -top-5 left-6 bg-[#E31E24] p-2 rounded-md">
+        <div className="absolute -top-5 left-6 bg-[#E82600] p-2 rounded-md">
           <MapPin className="w-6 h-6 text-white" />
         </div>
         <div className="mt-6">
-          <h3 className="text-lg font-semibold text-[#053951] mb-2">
+          <h3 className="text-2xl font-bold text-[#053951] mb-2">
             Visit Our Office
           </h3>
           <p className="text-gray-700 text-sm">
@@ -35,11 +35,11 @@ function FormMap() {
       {/* Email */}
       <div className="relative bg-[#053951] shadow-md rounded-xl p-6 hover:shadow-lg transition flex flex-col text-white">
         {/* Icon Tab */}
-        <div className="absolute -top-5 left-6 bg-[#E31E24] p-2 rounded-md">
+        <div className="absolute -top-5 left-6 bg-[#E82600] p-2 rounded-md">
           <Mail className="w-6 h-6 text-white" />
         </div>
         <div className="mt-6">
-          <h3 className="text-lg font-semibold mb-2">Send Email</h3>
+          <h3 className="text-2xl font-bold mb-2">Send Email</h3>
           <p className="text-sm">
             Sales: support@mailus.com <br />
             Service: sendmail@company.com
@@ -50,11 +50,11 @@ function FormMap() {
       {/* Phone */}
       <div className="relative bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition flex flex-col">
         {/* Icon Tab */}
-        <div className="absolute -top-5 left-6 bg-[#E31E24] p-2 rounded-md">
+        <div className="absolute -top-5 left-6 bg-[#E82600] p-2 rounded-md">
           <Phone className="w-6 h-6 text-white" />
         </div>
         <div className="mt-6">
-          <h3 className="text-lg font-semibold text-[#053951] mb-2">
+          <h3 className="text-2xl font-bold text-[#053951] mb-2">
             Make a Call
           </h3>
           <p className="text-gray-700 text-sm">

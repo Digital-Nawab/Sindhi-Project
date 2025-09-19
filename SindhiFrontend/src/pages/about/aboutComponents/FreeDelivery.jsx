@@ -19,7 +19,7 @@ function FreeDelivery() {
       icon: <Gift className="w-6 h-6" />,
       title: "Gift Voucher",
       desc: "Refer a friend",
-      color: "bg-pink-100 text-pink-600",
+      color: "bg-pink-100 text-[#E82600]",
     },
     {
       icon: <Package className="w-6 h-6" />,

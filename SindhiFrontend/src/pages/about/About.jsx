@@ -14,7 +14,7 @@ function About() {
       <Hero />
       <Mission />
       <FreeDelivery />
-      <KeyHighlight />
+      <KeyHighlight />  
       <Entrepreneur/>
    </Layout>
   )

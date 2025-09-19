@@ -18,6 +18,9 @@ import AboutSindhiSection from "./homeComponents/AboutSindhiSection";
 import OurPurpose from "./homeComponents/OurPurpose";
 import HowWeAchieveThis from "./homeComponents/HowWeAchieveThis";
 import LeadershipTeam from "./homeComponents/LeadershipTeam";
+import Founder from "./homeComponents/Founder";
+import SindhiLeaders from "./homeComponents/SindhiLeaders";
+import SindhiaAcross from "./homeComponents/SindhiaAcross";
 
 function Home() {
   return (
@@ -28,6 +31,9 @@ function Home() {
       <OurPurpose />
       <HowWeAchieveThis/>
       <LeadershipTeam/>
+      <Founder/>
+       <SindhiLeaders />
+       <SindhiaAcross />
       <ExploreProduct />
       <Sale />
       <CommunityProducts />

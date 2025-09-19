@@ -2,7 +2,7 @@ import React from "react";
 
 function Faq() {
   return (
-    <div className="mt-16 container mx-auto">
+    <div className="my-16 container mx-auto">
       <h3 className="text-3xl font-bold text-[#053951] mb-6 text-center">
         Frequently Asked Questions
       </h3>

@@ -6,7 +6,7 @@ function Privacy() {
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#053951] mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#000000] mb-4">
             Privacy Policy
           </h1>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto">
@@ -18,7 +18,7 @@ function Privacy() {
 
         {/* Introduction */}
         <div className="mb-10">
-          <h2 className="text-2xl font-semibold text-[#053951] mb-3">
+          <h2 className="text-2xl font-semibold text-[#000000] mb-3">
             Introduction
           </h2>
           <p className="text-gray-700 leading-relaxed">
@@ -33,7 +33,7 @@ function Privacy() {
 
         {/* Information Collection */}
         <div className="mb-10">
-          <h2 className="text-2xl font-semibold text-[#053951] mb-3">
+          <h2 className="text-2xl font-semibold text-[#000000] mb-3">
             Information We Collect
           </h2>
           <ul className="list-disc list-inside text-gray-700 space-y-2">
@@ -62,7 +62,7 @@ function Privacy() {
 
         {/* How We Use Information */}
         <div className="mb-10">
-          <h2 className="text-2xl font-semibold text-[#053951] mb-3">
+          <h2 className="text-2xl font-semibold text-[#000000] mb-3">
             How We Use Your Information
           </h2>
           <p className="text-gray-700 leading-relaxed">
@@ -86,7 +86,7 @@ function Privacy() {
 
         {/* Data Sharing */}
         <div className="mb-10">
-          <h2 className="text-2xl font-semibold text-[#053951] mb-3">
+          <h2 className="text-2xl font-semibold text-[#000000] mb-3">
             Data Sharing and Disclosure
           </h2>
           <p className="text-gray-700 leading-relaxed">
@@ -108,7 +108,7 @@ function Privacy() {
 
         {/* Cookies */}
         <div className="mb-10">
-          <h2 className="text-2xl font-semibold text-[#053951] mb-3">
+          <h2 className="text-2xl font-semibold text-[#000000] mb-3">
             Cookies and Tracking Technologies
           </h2>
           <p className="text-gray-700 leading-relaxed">
@@ -121,7 +121,7 @@ function Privacy() {
 
         {/* Data Security */}
         <div className="mb-10">
-          <h2 className="text-2xl font-semibold text-[#053951] mb-3">
+          <h2 className="text-2xl font-semibold text-[#000000] mb-3">
             Data Security
           </h2>
           <p className="text-gray-700 leading-relaxed">
@@ -135,7 +135,7 @@ function Privacy() {
 
         {/* User Rights */}
         <div className="mb-10">
-          <h2 className="text-2xl font-semibold text-[#053951] mb-3">
+          <h2 className="text-2xl font-semibold text-[#000000] mb-3">
             Your Rights
           </h2>
           <p className="text-gray-700 leading-relaxed">
@@ -159,7 +159,7 @@ function Privacy() {
 
         {/* Third-Party Links */}
         <div className="mb-10">
-          <h2 className="text-2xl font-semibold text-[#053951] mb-3">
+          <h2 className="text-2xl font-semibold text-[#000000] mb-3">
             Third-Party Links
           </h2>
           <p className="text-gray-700 leading-relaxed">
@@ -172,7 +172,7 @@ function Privacy() {
 
         {/* Changes to Policy */}
         <div className="mb-10">
-          <h2 className="text-2xl font-semibold text-[#053951] mb-3">
+          <h2 className="text-2xl font-semibold text-[#000000] mb-3">
             Changes to This Privacy Policy
           </h2>
           <p className="text-gray-700 leading-relaxed">
@@ -184,7 +184,7 @@ function Privacy() {
 
         {/* Contact */}
         <div>
-          <h2 className="text-2xl font-semibold text-[#053951] mb-3">
+          <h2 className="text-2xl font-semibold text-[#000000] mb-3">
             Contact Us
           </h2>
           <p className="text-gray-700 leading-relaxed">
