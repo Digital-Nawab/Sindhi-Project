@@ -14,7 +14,7 @@ import {
   ChevronUp,
   X,
 } from "lucide-react";
-import Layout from "../../layout/Layout";
+import NewLayout from "../../layout/NewLayout";
 
 function Product() {
   const products = [
@@ -364,7 +364,7 @@ function Product() {
   });
 
   return (
-    <Layout>
+    <NewLayout>
       <section className="bg-gray-50 min-h-screen py-10 px-6">
         {/* Title */}
         <div className="text-center mb-8">
@@ -1053,7 +1053,7 @@ function Product() {
           </div>
         </div>
       </section>
-    </Layout>
+    </NewLayout>
   );
 }
 

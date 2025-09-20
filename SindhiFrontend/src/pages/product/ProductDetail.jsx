@@ -21,7 +21,7 @@ import {
   X,
   Info,
 } from "lucide-react";
-import Layout from "../../layout/Layout";
+import NewLayout from "../../layout/NewLayout";
 
 function ProductDetail() {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
@@ -190,7 +190,7 @@ function ProductDetail() {
   };
 
   return (
-    <Layout>
+    <NewLayout>
       <div className="bg-gray-50 min-h-screen">
         {/* Breadcrumb */}
         <div className="bg-white border-b">
@@ -750,7 +750,7 @@ function ProductDetail() {
           </div>
         </div>
       </div>
-    </Layout>
+    </NewLayout>
   );
 }
 

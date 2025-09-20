@@ -21,7 +21,7 @@ import {
   MoreHorizontal,
   Flag,
 } from "lucide-react";
-import Layout from "../../layout/Layout";
+import NewLayout from "../../layout/NewLayout";
 
 
 function ServiceDetail() {
@@ -187,7 +187,7 @@ function ServiceDetail() {
   };
 
   return (
-    <Layout>
+    <NewLayout>
       <div className="min-h-screen bg-gray-50">
         {/* Header */}
         <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
@@ -710,7 +710,7 @@ function ServiceDetail() {
           </div>
         </div>
       </div>
-    </Layout>
+    </NewLayout>
   );
 }
 
