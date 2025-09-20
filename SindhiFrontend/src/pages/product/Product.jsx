@@ -15,7 +15,7 @@ import {
   X,
 } from "lucide-react";
 import NewLayout from "../../layout/NewLayout";
-
+import { Link } from "react-router-dom";
 function Product() {
   const products = [
     {
@@ -866,16 +866,17 @@ function Product() {
                       </p>
 
                       <div className="flex gap-2 mt-4">
-                        <button
-                          className={`flex-1 py-2 rounded-lg text-sm font-medium transition duration-300 ${
+                        <Link
+                          to="/product-detail"
+                          className={`flex-1 py-2 rounded-lg text-sm font-medium transition duration-300 text-center ${
                             product.inStock
                               ? "bg-red-600 hover:bg-red-700 text-white"
                               : "bg-gray-300 text-gray-500 cursor-not-allowed"
                           }`}
                           disabled={!product.inStock}
-                        >
+                          >
                           Enquire Now →
-                        </button>
+                        </Link>
                         <button
                           className={`p-2 rounded-lg border transition duration-300 ${
                             product.inStock
