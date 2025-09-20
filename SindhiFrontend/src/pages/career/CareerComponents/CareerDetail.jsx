@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Layout from "../../../layout/Layout";
 
 const jobDetail = {
   id: "senior-fullstack-dev-001",
@@ -106,6 +107,7 @@ function CareerDetail() {
   ];
 
   return (
+    <Layout>
     <div className="bg-gray-50 min-h-screen">
       {/* Navigation */}
       <div className="bg-white border-b">
@@ -494,6 +496,7 @@ function CareerDetail() {
         </div>
       )}
     </div>
+     </Layout>
   );
 }
 
