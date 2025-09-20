@@ -34,7 +34,7 @@ function NewNavbar() {
               📞 Call: <strong className="text-gray-800">+91 9837054501</strong>
             </span>
             <img
-              src="assets/images/logo.png"
+              src="assets/images/logo2.png"
               alt="Logo"
               className="h-8 md:h-10"
             />
@@ -47,14 +47,14 @@ function NewNavbar() {
       </div>
 
       {/* 🔹 Red Banner Section */}
-      <div className="text-center py-4 bg-[#E82600]">
+      {/* <div className="text-center py-4 bg-[#E82600]">
         <h1 className="text-xl md:text-2xl font-bold text-white">
           Sindhu Entrepreneurs' World Connect
         </h1>
-      </div>
+      </div> */}
 
       {/* 🔹 Main Navbar */}
-      <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-1 py-3 flex justify-between items-center">
         {/* Left Menu (Desktop) */}
         <div className="hidden md:flex items-center space-x-6 font-medium text-gray-700">
           <div className="relative">
@@ -114,7 +114,7 @@ function NewNavbar() {
 
         {/* Mobile Logo + Menu Button */}
         <div className="flex md:hidden justify-between items-center w-full">
-          <img src="assets/images/logo.png" alt="Logo" className="h-8" />
+          <img src="assets/images/logo2.png" alt="Logo" className="h-8" />
           <button
             className="md:hidden text-gray-700"
             onClick={() => setIsOpen(!isOpen)}
