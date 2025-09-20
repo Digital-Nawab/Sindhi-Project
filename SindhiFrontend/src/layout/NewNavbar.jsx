@@ -59,14 +59,12 @@ function NewNavbar() {
         </div>
       </div>
 
-   
-
       {/* 🔹 Main Navbar */}
       <div
-        className={`w-full  flex items-center transition-all duration-500 ease-in-out ${
+        className={`w-full flex items-center transition-all duration-500 ease-in-out ${
           isSticky
             ? "fixed top-0 left-0 right-0 bg-white shadow-lg z-50 animate-slideDown justify-between"
-            : "max-w-7xl mx-auto justify-between"
+            : "mx-auto justify-between bg-[#E82600]"
         }`}
       >
         <div
@@ -89,13 +87,15 @@ function NewNavbar() {
 
           {/* Menu (Desktop) */}
           <div
-            className={`hidden md:flex items-center space-x-6 font-medium text-gray-700 transition-all ${
-              isSticky ? "mx-auto " : ""
+            className={`hidden md:flex items-center space-x-6 font-medium transition-all ${
+              isSticky ? "text-gray-800" : "text-white"
             }`}
           >
             <div className="relative">
               <button
-                className="flex items-center text-md font-bold space-x-1 hover:text-[#E82600] focus:outline-none"
+                className={`flex items-center text-md font-bold space-x-1 focus:outline-none ${
+                  isSticky ? "text-gray-800" : "text-white"
+                }`}
                 onClick={() => setAboutOpen(!aboutOpen)}
               >
                 <span>About Us</span>
@@ -103,20 +103,20 @@ function NewNavbar() {
                   size={16}
                   className={`transition-transform ${
                     aboutOpen ? "rotate-180" : ""
-                  }`}
+                  } ${isSticky ? "text-gray-800" : "text-white"}`}
                 />
               </button>
               {aboutOpen && (
                 <div className="absolute left-0 top-full mt-2 w-40 bg-white shadow-md rounded-md">
                   <a
                     href="#mission"
-                    className="block px-4 py-2 hover:bg-blue-50 text-sm"
+                    className="block px-4 py-2 hover:bg-blue-50 text-sm text-gray-800"
                   >
                     Mission
                   </a>
                   <a
                     href="#vision"
-                    className="block px-4 py-2 hover:bg-blue-50 text-sm"
+                    className="block px-4 py-2 hover:bg-blue-50 text-sm text-gray-800"
                   >
                     Vision
                   </a>
@@ -126,25 +126,25 @@ function NewNavbar() {
 
             <a
               href="#functions"
-              className="text-md font-bold hover:text-[#E82600]"
+              className={isSticky ? "text-gray-800" : "text-white"}
             >
               Functions
             </a>
             <a
               href="#offerings"
-              className="text-md font-bold hover:text-[#E82600]"
+              className={isSticky ? "text-gray-800" : "text-white"}
             >
               Offerings
             </a>
             <a
               href="#jewels"
-              className="text-md font-bold hover:text-[#E82600]"
+              className={isSticky ? "text-gray-800" : "text-white"}
             >
               Jewels
             </a>
             <a
               href="#contact"
-              className="text-md font-bold hover:text-[#E82600]"
+              className={isSticky ? "text-gray-800" : "text-white"}
             >
               Contact
             </a>
