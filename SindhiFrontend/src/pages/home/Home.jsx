@@ -21,6 +21,10 @@ import LeadershipTeam from "./homeComponents/LeadershipTeam";
 import Founder from "./homeComponents/Founder";
 import SindhiLeaders from "./homeComponents/SindhiLeaders";
 import SindhiaAcross from "./homeComponents/SindhiaAcross";
+import AdvisoryBoard from "./homeComponents/AdvisoryBoard";
+import CommunityService from "./homeComponents/CommunityService";
+import OurLeader from "./homeComponents/OurLeader";
+import SewaInitiative from "./homeComponents/SewaInitiative";
 
 function Home() {
   return (
@@ -32,8 +36,12 @@ function Home() {
       <HowWeAchieveThis/>
       <LeadershipTeam/>
       <Founder/>
-       <SindhiLeaders />
-       <SindhiaAcross />
+      <SindhiLeaders />
+      <SindhiaAcross />
+      <AdvisoryBoard />
+      <CommunityService />
+      <OurLeader />
+      <SewaInitiative />
       <ExploreProduct />
       <Sale />
       <CommunityProducts />

@@ -38,7 +38,6 @@ import { ChevronDown, Menu, Search, User } from "lucide-react";
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
-                  {/* Add product options here */}
                   <DropdownMenuItem>Option 1</DropdownMenuItem>
                   <DropdownMenuItem>Option 2</DropdownMenuItem>
                 </DropdownMenuContent>
@@ -52,7 +51,7 @@ import { ChevronDown, Menu, Search, User } from "lucide-react";
                 />
               </div>
 
-              <div className="h-6 w-px bg-blue-300 mx-4" /> {/* Blue divider */}
+              <div className="h-6 w-px bg-blue-300 mx-4" /> 
 
               <Button className="bg-red-600 text-white">Free Listing</Button>
               <Button className="bg-black text-white ml-2">We Are Hiring</Button>

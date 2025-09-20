@@ -1,6 +1,7 @@
 import React , {useEffect} from "react";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 import Footer from "./Footer";
+import NewNavbar from "./NewNavbar";
 
 function Layout({ children }) {
   useEffect (() => {
@@ -8,7 +9,8 @@ function Layout({ children }) {
   },[])
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
+      <NewNavbar />
       <main className="main">{children}</main>
       <Footer />
     </div>
