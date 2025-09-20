@@ -31,7 +31,7 @@ function NewNavbar() {
       <div className="bg-gray-100 border-b">
         <div className="max-w-7xl mx-auto px-4 py-2 text-sm text-gray-600">
           {/* Mobile Info */}
-          <div className="flex flex-col items-center md:hidden space-y-2 text-center">
+          <div className=" hidden space-y-2 text-center">
             <span className="flex items-center space-x-1">
               <span className="text-pink-500">📞</span>
               <span>
@@ -73,7 +73,7 @@ function NewNavbar() {
         className={`w-full transition-all duration-500 ease-in-out ${
           isSticky
             ? "fixed top-0 left-0 right-0 bg-white text-gray-800 shadow-lg z-50 animate-slideDown"
-            : "bg-[#2f2f2f] text-white"
+            : "lg:bg-[#2f2f2f] lg:text-white"
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
