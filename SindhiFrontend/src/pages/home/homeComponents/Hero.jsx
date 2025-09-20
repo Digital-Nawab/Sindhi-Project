@@ -13,47 +13,28 @@ function Hero() {
   // Left slider data
   const leftSlides = [
     { id: 1, image: "/assets/images/slider/left.png", alt: "Left slide 1" },
-    { id: 1, image: "/assets/images/slider/left.png", alt: "Left slide 1" },
-    { id: 1, image: "/assets/images/slider/left.png", alt: "Left slide 1" },
+    { id: 2, image: "/assets/images/slider/left.png", alt: "Left slide 2" },
+    { id: 3, image: "/assets/images/slider/left.png", alt: "Left slide 3" },
   ];
 
   // Top right slider data
   const topRightSlides = [
-    {
-      id: 1,
-      image: "/assets/images/slider/right1.png",
-      alt: "Top right slide 1",
-    },
-    {
-      id: 1,
-      image: "/assets/images/slider/right2.png",
-      alt: "Top right slide 1",
-    },
-    {
-      id: 1,
-      image: "/assets/images/slider/right1.png",
-      alt: "Top right slide 1",
-    },
+    { id: 1, image: "/assets/images/slider/right1.png", alt: "Top right slide 1" },
+    { id: 2, image: "/assets/images/slider/right2.png", alt: "Top right slide 2" },
+    { id: 3, image: "/assets/images/slider/right1.png", alt: "Top right slide 3" },
   ];
 
   // Bottom right slider data
   const bottomRightSlides = [
-    {
-      id: 1,
-      image: "/assets/images/slider/right2.png",
-      alt: "Bottom right slide 1",
-    },
-    {
-      id: 1,
-      image: "/assets/images/slider/right1.png",
-      alt: "Bottom right slide 1",
-    },
+    { id: 1, image: "/assets/images/slider/right2.png", alt: "Bottom right slide 1" },
+    { id: 2, image: "/assets/images/slider/right1.png", alt: "Bottom right slide 2" },
   ];
 
   return (
-    <div className="w-full bg-white py-16 px-6 overflow-hidden shadow-2xl border">
+    <div className="w-full bg-white py-8 px-4 md:py-16 md:px-6 overflow-hidden shadow-2xl border">
       <div className="container mx-auto">
-        <div className="grid grid-cols-5 gap-6 mb-15">
+        {/* Desktop / Tablet Layout */}
+        <div className="hidden md:grid grid-cols-5 gap-6 mb-15">
           {/* Left Column - Main Slider */}
           <div className="col-span-3 rounded-lg relative">
             <Swiper
@@ -65,9 +46,6 @@ function Hero() {
                 delay: 4000,
                 disableOnInteraction: false,
               }}
-             
-              
-            
               className="rounded-lg shadow-lg h-full"
             >
               {leftSlides.map((slide) => (
@@ -80,12 +58,6 @@ function Hero() {
                 </SwiperSlide>
               ))}
             </Swiper>
-
-            {/* Custom Navigation Buttons */}
-            
-            
-
-            
           </div>
 
           {/* Right Column */}
@@ -100,10 +72,6 @@ function Hero() {
                 autoplay={{
                   delay: 3500,
                   disableOnInteraction: false,
-                }}
-                navigation={{
-                  nextEl: ".top-right-swiper-button-next",
-                  prevEl: ".top-right-swiper-button-prev",
                 }}
                 pagination={{
                   el: ".top-right-swiper-pagination",
@@ -122,7 +90,6 @@ function Hero() {
                   </SwiperSlide>
                 ))}
               </Swiper>
-
             </div>
 
             {/* Bottom Right Slider */}
@@ -135,10 +102,6 @@ function Hero() {
                 autoplay={{
                   delay: 4500,
                   disableOnInteraction: false,
-                }}
-                navigation={{
-                  nextEl: ".bottom-right-swiper-button-next",
-                  prevEl: ".bottom-right-swiper-button-prev",
                 }}
                 pagination={{
                   el: ".bottom-right-swiper-pagination",
@@ -157,45 +120,35 @@ function Hero() {
                   </SwiperSlide>
                 ))}
               </Swiper>
-
-              
             </div>
           </div>
         </div>
 
-        <div className="container mx-auto px-6 relative z-10 -mt-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8"></div>
+        {/* Mobile Layout (only Left Slider, 50vh) */}
+        <div className="md:hidden h-[35vh]">
+          <Swiper
+            modules={[Navigation, Pagination, Autoplay, EffectFade]}
+            spaceBetween={0}
+            slidesPerView={1}
+            loop={true}
+            autoplay={{
+              delay: 4000,
+              disableOnInteraction: false,
+            }}
+            className="rounded-lg shadow-lg w-full h-full"
+          >
+            {leftSlides.map((slide) => (
+              <SwiperSlide key={slide.id}>
+                <img
+                  src={slide.image}
+                  className="w-full h-full object-cover rounded-lg"
+                  alt={slide.alt}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
-
-      {/* Custom Styles */}
-      <style jsx>{`
-        .left-swiper-pagination .swiper-pagination-bullet {
-          width: 12px;
-          height: 12px;
-          background: rgba(255, 255, 255, 0.7);
-          opacity: 1;
-        }
-
-        .left-swiper-pagination .swiper-pagination-bullet-active {
-          background: white;
-          transform: scale(1.2);
-        }
-
-        .top-right-swiper-pagination .swiper-pagination-bullet,
-        .bottom-right-swiper-pagination .swiper-pagination-bullet {
-          width: 8px;
-          height: 8px;
-          background: rgba(255, 255, 255, 0.7);
-          opacity: 1;
-        }
-
-        .top-right-swiper-pagination .swiper-pagination-bullet-active,
-        .bottom-right-swiper-pagination .swiper-pagination-bullet-active {
-          background: white;
-          transform: scale(1.2);
-        }
-      `}</style>
     </div>
   );
 }

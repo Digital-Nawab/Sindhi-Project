@@ -21,10 +21,11 @@ import {
   Clock,
   Award,
   Briefcase,
-  CheckCircle 
+  CheckCircle,
 } from "lucide-react";
 import NewLayout from "../../layout/NewLayout";
 import { ArrowRight, Shield, Zap } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 function Services() {
   const [selectedCategory, setSelectedCategory] = useState("All Services");
@@ -571,13 +572,15 @@ function Services() {
                     </div>
 
                     <div className="flex gap-2">
-                      <button className="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-xl transition-colors flex items-center justify-center gap-2">
-                        <Mail className="w-4 h-4" />
-                        Contact Now
-                      </button>
-                      <button className="p-3 border border-gray-300 hover:border-blue-600 hover:text-blue-600 rounded-xl transition-colors">
-                        <Phone className="w-4 h-4" />
-                      </button>
+                      <NavLink to={`/service-detail`} className="flex-1">
+                        <button className="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-xl transition-colors flex items-center justify-center gap-2">
+                          <Mail className="w-4 h-4" />
+                          Contact Now
+                        </button>
+                        <button className="p-3 border border-gray-300 hover:border-blue-600 hover:text-blue-600 rounded-xl transition-colors">
+                          <Phone className="w-4 h-4" />
+                        </button>
+                      </NavLink>
                     </div>
                   </div>
                 </div>
