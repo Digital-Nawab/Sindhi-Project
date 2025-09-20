@@ -21,8 +21,10 @@ import {
   Clock,
   Award,
   Briefcase,
+  CheckCircle 
 } from "lucide-react";
 import Layout from "../../layout/Layout";
+import { ArrowRight, Shield, Zap } from "lucide-react";
 
 function Services() {
   const [selectedCategory, setSelectedCategory] = useState("All Services");
@@ -262,35 +264,155 @@ function Services() {
     <Layout>
       <div className="min-h-screen bg-gray-50">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white py-20">
+        <section className="bg-white py-16 lg:py-24">
           <div className="container mx-auto px-6">
-            <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">
-                Professional Services
-                <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
-                  {" "}
-                  Marketplace
-                </span>
-              </h1>
-              <p className="text-xl md:text-2xl text-blue-100 mb-8">
-                Connect with verified professionals and grow your business with
-                expert services
-              </p>
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-7xl mx-auto">
+              {/* Left Content */}
+              <div className="space-y-8">
+                {/* Main Heading */}
+                <div className="space-y-4">
+                  <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
+                    Professional Services
+                    <br />
+                    <span className="text-blue-600">Marketplace</span>
+                  </h1>
+                  <p className="text-lg lg:text-xl text-gray-600 leading-relaxed">
+                    Connect with verified professionals and grow your business
+                    with expert services. Quality guaranteed, results delivered.
+                  </p>
+                </div>
 
-              {/* Search Bar */}
-              <div className="bg-white rounded-2xl p-2 shadow-2xl max-w-2xl mx-auto">
-                <div className="flex items-center">
-                  <Search className="w-6 h-6 text-gray-400 ml-4" />
-                  <input
-                    type="text"
-                    placeholder="Search for services, professionals, or expertise..."
-                    className="flex-1 px-4 py-3 text-gray-900 placeholder-gray-500 focus:outline-none rounded-l-xl"
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                  />
-                  <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-semibold transition-colors">
-                    Search
+                {/* Trust Indicators */}
+                <div className="flex items-center gap-6 text-sm text-gray-600">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-500" />
+                    <span>Verified Professionals</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Star className="w-5 h-5 text-yellow-500 fill-current" />
+                    <span>4.9/5 Average Rating</span>
+                  </div>
+                </div>
+
+                {/* Search Bar */}
+                <div className="space-y-4">
+                  <div className="relative">
+                    <div className="bg-white border-2 border-gray-200 rounded-2xl p-2 shadow-lg hover:shadow-xl transition-all duration-300 focus-within:border-blue-500">
+                      <div className="flex items-center">
+                        <div className="flex items-center pl-4">
+                          <Search className="w-5 h-5 text-gray-400" />
+                        </div>
+                        <input
+                          type="text"
+                          placeholder="Search for services, professionals, or expertise..."
+                          className="flex-1 px-4 py-4 text-gray-900 placeholder-gray-400 focus:outline-none text-base"
+                          value={searchTerm}
+                          onChange={(e) => setSearchTerm(e.target.value)}
+                        />
+                        <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-200 flex items-center gap-2 shadow-md hover:shadow-lg">
+                          Search
+                          <ArrowRight className="w-4 h-4" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Popular Searches */}
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="text-sm text-gray-500">Popular:</span>
+                    {[
+                      "Web Development",
+                      "Graphic Design",
+                      "Digital Marketing",
+                      "Content Writing",
+                    ].map((term) => (
+                      <button
+                        key={term}
+                        className="text-sm bg-gray-50 hover:bg-gray-100 text-gray-700 px-3 py-1 rounded-full border border-gray-200 hover:border-gray-300 transition-all duration-200"
+                      >
+                        {term}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* CTA Buttons */}
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2">
+                    <Briefcase className="w-5 h-5" />
+                    Find Services
                   </button>
+                  <button className="bg-gray-100 hover:bg-gray-200 text-gray-700 px-8 py-4 rounded-xl font-semibold transition-all duration-200 border-2 border-gray-200 hover:border-gray-300 flex items-center justify-center gap-2">
+                    <Users className="w-5 h-5" />
+                    Join as Professional
+                  </button>
+                </div>
+              </div>
+
+              {/* Right Images Grid */}
+              <div className="relative">
+                <div className="grid grid-cols-2 gap-4">
+                  {/* Top Left - Professional at work */}
+                  <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl p-8 flex items-center justify-center aspect-square">
+                    <div className="text-center">
+                      <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <Briefcase className="w-8 h-8 text-white" />
+                      </div>
+                      <h3 className="font-semibold text-gray-800 mb-2">
+                        Web Development
+                      </h3>
+                      <p className="text-sm text-gray-600">500+ Experts</p>
+                    </div>
+                  </div>
+
+                  {/* Top Right - Design services */}
+                  <div className="bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl p-8 flex items-center justify-center aspect-square">
+                    <div className="text-center">
+                      <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <Star className="w-8 h-8 text-white" />
+                      </div>
+                      <h3 className="font-semibold text-gray-800 mb-2">
+                        Graphic Design
+                      </h3>
+                      <p className="text-sm text-gray-600">300+ Experts</p>
+                    </div>
+                  </div>
+
+                  {/* Bottom Left - Marketing services */}
+                  <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-2xl p-8 flex items-center justify-center aspect-square">
+                    <div className="text-center">
+                      <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <Users className="w-8 h-8 text-white" />
+                      </div>
+                      <h3 className="font-semibold text-gray-800 mb-2">
+                        Digital Marketing
+                      </h3>
+                      <p className="text-sm text-gray-600">250+ Experts</p>
+                    </div>
+                  </div>
+
+                  {/* Bottom Right - Content services */}
+                  <div className="bg-gradient-to-br from-orange-100 to-orange-200 rounded-2xl p-8 flex items-center justify-center aspect-square">
+                    <div className="text-center">
+                      <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <CheckCircle className="w-8 h-8 text-white" />
+                      </div>
+                      <h3 className="font-semibold text-gray-800 mb-2">
+                        Content Writing
+                      </h3>
+                      <p className="text-sm text-gray-600">400+ Experts</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Floating Badge */}
+                <div className="absolute -top-4 -right-4 bg-white rounded-full px-4 py-2 shadow-lg border border-gray-200">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                    <span className="text-sm font-medium text-gray-700">
+                      1000+ Active
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
