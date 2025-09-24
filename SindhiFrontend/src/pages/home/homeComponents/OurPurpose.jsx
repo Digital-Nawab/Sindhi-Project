@@ -31,7 +31,7 @@ const OurPurpose = () => {
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               Our Vision
             </h2>
-            <p className="text-gray-900 text-lg font-semibold leading-relaxed">
+            <p className="text-gray-900 text-lg  leading-relaxed">
               To create the largest global network of Sindhis, fostering
               connections that transcend borders and generations.
             </p>
@@ -53,7 +53,7 @@ const OurPurpose = () => {
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               Our Mission
             </h2>
-            <p className="text-gray-900 text-lg font-semibold leading-relaxed">
+            <p className="text-gray-900 text-lg  leading-relaxed">
               Empowering Sindhis worldwide through business opportunities,
               cultural preservation, and community support.
             </p>
@@ -75,7 +75,7 @@ const OurPurpose = () => {
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               Our Values
             </h2>
-            <p className="text-gray-900 text-lg font-semibold leading-relaxed">
+            <p className="text-gray-900 text-lg  leading-relaxed">
               Unity, integrity, and cultural pride guide everything we do. We
               believe in collective growth and mutual support.
             </p>

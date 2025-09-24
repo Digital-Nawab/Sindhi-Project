@@ -27,7 +27,7 @@ const HowWeAchieveThis = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
             Empower Sindhi Youth
           </h2>
-          <p className="text-gray-900 text-lg font-semibold leading-relaxed max-w-sm mx-auto">
+          <p className="text-gray-900 text-lg  leading-relaxed max-w-sm mx-auto">
             Provide opportunities and mentorship for the next generation
           </p>
         </div>
@@ -46,7 +46,7 @@ const HowWeAchieveThis = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
             Connect Businesses
           </h2>
-          <p className="text-gray-900 text-lg font-semibold leading-relaxed max-w-sm mx-auto">
+          <p className="text-gray-900 text-lg  leading-relaxed max-w-sm mx-auto">
             Bridge professionals and enterprises across the globe
           </p>
         </div>
@@ -65,7 +65,7 @@ const HowWeAchieveThis = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
             Preserve Traditions
           </h2>
-          <p className="text-gray-900 text-lg font-semibold leading-relaxed max-w-sm mx-auto">
+          <p className="text-gray-900 text-lg  leading-relaxed max-w-sm mx-auto">
             Keep Sindhi culture alive in the digital era
           </p>
         </div>

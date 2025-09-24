@@ -39,7 +39,7 @@ const LeadershipTeam = () => {
             </h2>
 
             {/* Description */}
-            <p className="text-gray-900 text-lg font-semibold text-center leading-relaxed mb-8">
+            <p className="text-gray-900 text-lg  text-center leading-relaxed mb-8">
               Serial entrepreneur with 25+ years of experience in building
               global businesses. Passionate advocate for Sindhi culture and
               community development worldwide.

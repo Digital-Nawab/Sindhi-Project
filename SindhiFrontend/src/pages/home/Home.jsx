@@ -30,8 +30,8 @@ function Home() {
   return (
     <Layout>
       <Hero />
-      <Categories />
       <AboutSindhiSection />
+      {/* <Categories /> */}
       <OurPurpose />
       <HowWeAchieveThis/>
       <LeadershipTeam/>

@@ -26,7 +26,7 @@ function NewNavbar() {
   }, []);
 
   return (
-    <nav className="relative w-full">
+    <nav className="relative w-full shadow border-b">
       {/* 🔹 Top Info Bar */}
       <div className="bg-gray-100 border-b">
         <div className="max-w-7xl mx-auto px-4 py-2 text-sm text-gray-600">
