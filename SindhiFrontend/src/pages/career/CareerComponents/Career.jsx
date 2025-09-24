@@ -249,34 +249,6 @@ function Career() {
         </div>
       </section>
 
-      {/* Company Stats */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Our Impact Across India
-            </h2>
-            <p className="text-gray-600 text-lg">
-              Numbers that show the scale of what you'll be working on
-            </p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {companyStats.map((stat, idx) => (
-              <div key={idx} className="text-center">
-                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 hover:shadow-lg transition-shadow">
-                  <h3 className="text-3xl font-bold text-[#E82600] mb-2">
-                    {stat.number}
-                  </h3>
-                  <p className="font-semibold text-gray-900 mb-1">
-                    {stat.title}
-                  </p>
-                  <p className="text-sm text-gray-600">{stat.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Job Openings */}
       <section id="jobs" className="py-16 bg-gray-50">

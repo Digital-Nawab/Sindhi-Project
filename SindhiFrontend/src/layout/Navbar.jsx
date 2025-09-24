@@ -160,11 +160,14 @@ function Navbar() {
           <a href="#" className="whitespace-nowrap hover:underline">
             Home
           </a>
-          <a href="#" className="whitespace-nowrap hover:underline">
+          <a href="/products" className="whitespace-nowrap hover:underline">
             Products
           </a>
-          <a href="#" className="whitespace-nowrap hover:underline">
-            Offers
+          <a href="/services" className="whitespace-nowrap hover:underline">
+            Services
+          </a>
+          <a href="/vendor" className="whitespace-nowrap hover:underline">
+            Vendors
           </a>
           <a href="#" className="whitespace-nowrap hover:underline">
             About Us

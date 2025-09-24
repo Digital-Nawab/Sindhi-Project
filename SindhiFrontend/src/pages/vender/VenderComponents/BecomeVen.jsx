@@ -163,73 +163,7 @@ function BecomeVen() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-16 bg-white relative">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Our Impact
-            </h2>
-            <p className="text-gray-600 text-lg">
-              Numbers that show the level you'll be working at
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, idx) => (
-              <div
-                key={idx}
-                className={`text-center transform hover:scale-105 transition-all duration-300 ${
-                  isVisible ? "animate-fadeInUp" : ""
-                }`}
-                style={{ animationDelay: `${idx * 150}ms` }}
-              >
-                <div className="bg-gradient-to-br from-blue-50 to-red-50 rounded-2xl p-6 hover:shadow-lg border border-blue-100">
-                  <h3 className="text-2xl md:text-3xl font-bold text-[#E82600] mb-2">
-                    {stat.number}
-                  </h3>
-                  <p className="font-semibold text-gray-900 mb-1 text-sm md:text-base">
-                    {stat.title}
-                  </p>
-                  <p className="text-xs text-gray-600">{stat.subtitle}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-50 to-red-50">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Why Choose Our Platform?
-            </h2>
-            <p className="text-gray-600 text-lg">
-              Built with deep understanding of Sindhi business culture and needs
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {benefits.map((benefit, idx) => (
-              <div
-                key={idx}
-                className={`bg-white p-6 rounded-xl shadow-sm hover:shadow-lg border-l-4 border-[#E82600] hover:border-red-500 transition-all duration-300 hover:scale-105 transform ${
-                  isVisible ? "animate-slideInUp" : ""
-                }`}
-                style={{ animationDelay: `${idx * 200}ms` }}
-              >
-                <div className="text-[#E82600] mb-4">{benefit.icon}</div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  {benefit.title}
-                </h3>
-                <p className="text-gray-600 text-sm">{benefit.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+     
 
       {/* Success Stories */}
       {/* <section className="py-16 bg-white">

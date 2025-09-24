@@ -1,12 +1,18 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Target, Eye } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { NavLink } from "react-router-dom";
 
 function NewNavbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [aboutOpen, setAboutOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
-  // 👇 Detect scroll position
+  // Detect scroll
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 120) {
@@ -15,16 +21,16 @@ function NewNavbar() {
         setIsSticky(false);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <nav className="bg-white shadow-md relative w-full">
+    <nav className="relative w-full">
       {/* 🔹 Top Info Bar */}
       <div className="bg-gray-100 border-b">
         <div className="max-w-7xl mx-auto px-4 py-2 text-sm text-gray-600">
+          {/* Mobile Info */}
           <div className="flex flex-col items-center md:hidden space-y-2 text-center">
             <span className="flex items-center space-x-1">
               <span className="text-pink-500">📞</span>
@@ -42,15 +48,18 @@ function NewNavbar() {
             </span>
           </div>
 
+          {/* Desktop Info */}
           <div className="hidden md:flex justify-between items-center">
             <span>
               📞 Call: <strong className="text-gray-800">+91 9837054501</strong>
             </span>
-            <img
-              src="assets/images/logo2.png"
-              alt="Logo"
-              className="h-8 md:h-10"
-            />
+            <NavLink to="/">
+              <img
+                src="assets/images/logo2.png"
+                alt="Logo"
+                className="h-8 md:h-10"
+              />
+            </NavLink>
             <span>
               📧 Mail:{" "}
               <strong className="text-gray-800">testing@gmail.com</strong>
@@ -61,22 +70,16 @@ function NewNavbar() {
 
       {/* 🔹 Main Navbar */}
       <div
-        className={`w-full flex items-center transition-all duration-500 ease-in-out ${
+        className={`w-full transition-all duration-500 ease-in-out ${
           isSticky
-            ? "fixed top-0 left-0 right-0 bg-white shadow-lg z-50 animate-slideDown justify-between"
-            : "mx-auto justify-between bg-[#E82600]"
+            ? "fixed top-0 left-0 right-0 bg-white text-gray-800 shadow-lg z-50 animate-slideDown"
+            : "bg-[#2f2f2f] text-white"
         }`}
       >
-        <div
-          className={`w-full px-6 py-3 flex items-center transition-all duration-500 ease-in-out ${
-            isSticky
-              ? " bg-white shadow-lg z-50 animate-slideDown justify-between"
-              : "max-w-7xl mx-auto justify-between"
-          }`}
-        >
-          {/* 👇 Sticky: Logo on left */}
+        <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+          {/* Sticky Logo */}
           {isSticky && (
-            <div className="flex items-center">
+            <div className="hidden md:flex items-center">
               <img
                 src="assets/images/logo.png"
                 alt="Logo"
@@ -85,119 +88,111 @@ function NewNavbar() {
             </div>
           )}
 
-          {/* Menu (Desktop) */}
+          {/* Desktop Menu */}
           <div
             className={`hidden md:flex items-center space-x-6 font-medium transition-all ${
-              isSticky ? "text-gray-800" : "text-white"
+              isSticky ? "mx-auto" : ""
             }`}
           >
-            <div className="relative">
-              <button
-                className={`flex items-center text-md font-bold space-x-1 focus:outline-none ${
-                  isSticky ? "text-gray-800" : "text-white"
-                }`}
-                onClick={() => setAboutOpen(!aboutOpen)}
+            {/* ✅ Shadcn Dropdown with Icons */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center font-bold hover:text-[#E82600] focus:outline-none">
+                About Us <ChevronDown size={16} className="ml-1" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent
+                className="w-48 mt-2 rounded-lg shadow-lg bg-white text-gray-800 border"
+                align="start"
               >
-                <span>About Us</span>
-                <ChevronDown
-                  size={16}
-                  className={`transition-transform ${
-                    aboutOpen ? "rotate-180" : ""
-                  } ${isSticky ? "text-gray-800" : "text-white"}`}
-                />
-              </button>
-              {aboutOpen && (
-                <div className="absolute left-0 top-full mt-2 w-40 bg-white shadow-md rounded-md">
+                <DropdownMenuItem asChild>
                   <a
                     href="#mission"
-                    className="block px-4 py-2 hover:bg-blue-50 text-sm text-gray-800"
+                    className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md transition"
                   >
+                    <Target size={16} className="text-red-500" />
                     Mission
                   </a>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
                   <a
                     href="#vision"
-                    className="block px-4 py-2 hover:bg-blue-50 text-sm text-gray-800"
+                    className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md transition"
                   >
+                    <Eye size={16} className="text-blue-500" />
                     Vision
                   </a>
-                </div>
-              )}
-            </div>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
 
-            <a
-              href="#functions"
-              className={isSticky ? "text-gray-800" : "text-white"}
-            >
-              Functions
+            <a href="#functions" className="font-bold hover:text-[#E82600]">
+              How We Function
             </a>
-            <a
-              href="#offerings"
-              className={isSticky ? "text-gray-800" : "text-white"}
-            >
-              Offerings
+            <a href="#offerings" className="font-bold hover:text-[#E82600]">
+              Our Offerings
             </a>
-            <a
-              href="#jewels"
-              className={isSticky ? "text-gray-800" : "text-white"}
-            >
-              Jewels
+            <a href="#jewels" className="font-bold hover:text-[#E82600]">
+              Jewels of SEW
             </a>
-            <a
-              href="#contact"
-              className={isSticky ? "text-gray-800" : "text-white"}
-            >
+            <a href="#contact" className="font-bold hover:text-[#E82600]">
               Contact
             </a>
           </div>
 
-          {/* CTA Button (Right) */}
-          <div className="hidden md:flex items-center space-x-6 font-medium text-gray-700">
+          {/* Desktop CTA */}
+          <div className="hidden md:flex items-center space-x-6 font-medium">
             <a
-              href="#membership"
-              className="inline-block px-6 py-2 bg-[#053951] text-white font-semibold rounded-lg shadow-md hover:bg-[#E82600] hover:shadow-lg transition duration-300"
+              href="/become-vendor"
+              className={`inline-block px-6 py-2 font-semibold rounded-lg shadow-md transition duration-300 ${
+                isSticky
+                  ? "bg-[#053951] text-white hover:bg-[#E82600]"
+                  : "bg-white text-[#2f2f2f] hover:bg-[#E82600] hover:text-white"
+              }`}
             >
               Become A Member
             </a>
           </div>
-        </div>
 
-        {/* Mobile Logo + Menu Button */}
-        <div className="flex md:hidden justify-between items-center w-full">
-          <img src="assets/images/logo2.png" alt="Logo" className="h-8" />
-          <button
-            className="md:hidden text-gray-700"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
+          {/* Mobile Logo + Menu Button */}
+          <div className="flex md:hidden justify-between items-center w-full">
+            <img src="assets/images/logo2.png" alt="Logo" className="h-8" />
+            <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+              {isOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
+          </div>
         </div>
       </div>
 
       {/* 🔹 Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="md:hidden flex flex-col space-y-2 px-6 pb-4 font-medium text-gray-700 border-t bg-white">
-          <button
-            className="flex justify-between items-center hover:text-[#E82600]"
-            onClick={() => setAboutOpen(!aboutOpen)}
-          >
-            <span>About Us</span>
-            <ChevronDown
-              size={16}
-              className={`transition-transform ${
-                aboutOpen ? "rotate-180" : ""
-              }`}
-            />
-          </button>
-          {aboutOpen && (
-            <div className="ml-4 flex flex-col space-y-1">
-              <a href="#mission" className="hover:text-[#E82600] text-sm">
-                Mission
-              </a>
-              <a href="#vision" className="hover:text-[#E82600] text-sm">
-                Vision
-              </a>
-            </div>
-          )}
+        <div className="md:hidden flex flex-col space-y-2 px-6 pb-4 font-medium border-t bg-white text-gray-800">
+          <DropdownMenu>
+            <DropdownMenuTrigger className="flex justify-between items-center hover:text-[#E82600]">
+              About Us <ChevronDown size={16} />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent
+              className="w-48 mt-2 rounded-lg shadow-lg bg-white text-gray-800 border"
+              align="start"
+            >
+              <DropdownMenuItem asChild>
+                <a
+                  href="#mission"
+                  className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md transition"
+                >
+                  <Target size={16} className="text-red-500" />
+                  Mission
+                </a>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <a
+                  href="#vision"
+                  className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md transition"
+                >
+                  <Eye size={16} className="text-blue-500" />
+                  Vision
+                </a>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
 
           <a href="#functions" className="hover:text-[#E82600]">
             Functions
@@ -213,7 +208,7 @@ function NewNavbar() {
           </a>
 
           <a
-            href="#membership"
+            href="/become-vendor"
             className="mt-3 inline-block px-6 py-3 bg-[#053951] text-white font-semibold rounded-lg shadow-md hover:bg-[#E82600] hover:shadow-lg transition duration-300 text-center"
           >
             Become A Member
