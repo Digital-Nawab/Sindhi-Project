@@ -9,7 +9,7 @@ const AboutSindhiSection = () => {
           <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
             About <span className="text-red-500">Sindhi Community</span>
           </h2>
-          <p className="text-gray-900 font-semibold text-lg max-w-2xl mx-auto">
+          <p className="text-gray-900  text-lg max-w-2xl mx-auto">
             Meet the visionary leaders driving our community forward
           </p>
         </div>
@@ -22,15 +22,15 @@ const AboutSindhiSection = () => {
               <h3 className="text-3xl font-bold text-black mb-6">
                 Sindhi Community
               </h3>
-              <p className="text-gray-900 font-semibold text-lg leading-relaxed mb-6">
+              <p className="text-gray-900  text-lg leading-relaxed mb-6">
                 The Sindhi community is one of the world's oldest trading and entrepreneurial 
                 communities, known for resilience, adaptability, and global presence.
               </p>
-              <p className="text-gray-900 font-semibold text-lg leading-relaxed mb-6">
+              <p className="text-gray-900  text-lg leading-relaxed mb-6">
                 From the Indus Valley Civilization to modern business empires, Sindhis have carried 
                 forward a legacy of hard work, innovation, and cultural richness.
               </p>
-              <p className="text-gray-900 font-semibold text-lg leading-relaxed">
+              <p className="text-gray-900  text-lg leading-relaxed">
                 <span className="text-red-500 font-semibold">Cheti Chand, Ajrak, Sindhi Sweets,</span> and centuries of traditions remind us of 
                 who we are – while our businesses, startups, and professionals shape the future.
               </p>

@@ -90,7 +90,7 @@ function SindhiVendor() {
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
           Trusted Sindhi Vendors
         </h2>
-        <p className="mt-3 text-gray-900 text-lg font-semibold">
+        <p className="mt-3 text-gray-900 text-lg ">
           Connect with established Sindhi business owners and grow your network
         </p>
 

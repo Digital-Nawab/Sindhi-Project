@@ -252,7 +252,7 @@ function CareerDetail() {
                       <span className="w-4 h-4 mr-2">🏢</span>
                       <span className="text-sm font-medium">Department</span>
                     </div>
-                    <span className="text-gray-900 font-semibold">
+                    <span className="text-gray-900 ">
                       {jobDetail.department}
                     </span>
                   </div>
@@ -261,7 +261,7 @@ function CareerDetail() {
                       <span className="w-4 h-4 mr-2">📍</span>
                       <span className="text-sm font-medium">Location</span>
                     </div>
-                    <span className="text-gray-900 font-semibold">
+                    <span className="text-gray-900 ">
                       {jobDetail.location}
                     </span>
                   </div>
@@ -270,7 +270,7 @@ function CareerDetail() {
                       <span className="w-4 h-4 mr-2">💼</span>
                       <span className="text-sm font-medium">Experience</span>
                     </div>
-                    <span className="text-gray-900 font-semibold">
+                    <span className="text-gray-900 ">
                       {jobDetail.experience}
                     </span>
                   </div>
@@ -279,7 +279,7 @@ function CareerDetail() {
                       <span className="w-4 h-4 mr-2">💰</span>
                       <span className="text-sm font-medium">Salary</span>
                     </div>
-                    <span className="text-gray-900 font-semibold">
+                    <span className="text-gray-900 ">
                       {jobDetail.salary}
                     </span>
                   </div>
