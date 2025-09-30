@@ -16,6 +16,7 @@ import Product from "../pages/product/Product";
 import ProductDetail from "../pages/product/ProductDetail";
 import Services from "../pages/service/Services";
 import ServiceDetail from "../pages/service/ServiceDetail";
+import SEWConnectPage from "../pages/vision/Vision";
 
 function Router() {
   return (
@@ -37,6 +38,7 @@ function Router() {
         <Route path="/services" element={<Services />} />
         <Route path="/service-detail" element={<ServiceDetail />} />
         <Route path="/product-detail" element={<ProductDetail />} />
+        <Route path="/vision-mission" element={<SEWConnectPage />} />
       </Routes>
     </BrowserRouter>
   );
