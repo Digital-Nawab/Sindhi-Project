@@ -137,13 +137,13 @@ function NewNavbar() {
                 align="start"
               >
                 <DropdownMenuItem asChild>
-                  <a
-                    href="#mission"
-                    className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md transition"
+                  <Link
+                    to="/agra-chapter-founders"
+                    className="flex items-center gap-2 cursor-pointer px-3 py-2 hover:bg-gray-100 rounded-md transition"
                   >
                     <Target size={16} className="text-red-500" />
                     Agra
-                  </a>
+                  </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

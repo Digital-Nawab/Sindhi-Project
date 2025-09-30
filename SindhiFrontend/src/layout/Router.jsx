@@ -19,6 +19,11 @@ import ServiceDetail from "../pages/service/ServiceDetail";
 import SEWConnectPage from "../pages/vision/Vision";
 import Jewels from "../pages/jewels/Jewels";
 import Function from "../pages/function/Function";
+import Achieve from "../pages/vision/Achieve";
+import ChaptersPage from "../pages/vision/CityChaptersPage";
+import DirectoryPage from "../pages/vision/DirectoryPage";
+import PodcastPage from "../pages/vision/PodcastPage";
+import AgraChapterFounders from "../pages/Agra";
 
 function Router() {
   return (
@@ -41,8 +46,13 @@ function Router() {
         <Route path="/service-detail" element={<ServiceDetail />} />
         <Route path="/product-detail" element={<ProductDetail />} />
         <Route path="/vision-mission" element={<SEWConnectPage />} />
+        <Route path="/how-we-achieve" element={<Achieve />} />
         <Route path="/jewels" element={<Jewels />} />
         <Route path="/functions" element={<Function />} />
+        <Route path="/chapters" element={<ChaptersPage />} />
+        <Route path="/directory" element={<DirectoryPage />} />
+        <Route path="/podcast" element={<PodcastPage />} />
+        <Route path="/agra-chapter-founders" element={<AgraChapterFounders />} />
       </Routes>
     </BrowserRouter>
   );
