@@ -6,7 +6,7 @@ import Contact from "../pages/contact/Contact";
 import Vender from "../pages/vender/Vender";
 import VenderDetailPage from "../pages/vender/VenderDetailPage";
 import TermConditionPage from "../pages/term.jsx/TermConditionPage";
-// import PrivacyPolicy from '../pages/privacy/PrivacyPolicy';
+import PrivacyPolicy from '../pages/privacy/PrivacyPolicy';
 import Registration from "../pages/Registration";
 import Login from "../pages/Login";
 import CareerPage from "../pages/career/CareerPage";
@@ -16,6 +16,8 @@ import Product from "../pages/product/Product";
 import ProductDetail from "../pages/product/ProductDetail";
 import Services from "../pages/service/Services";
 import ServiceDetail from "../pages/service/ServiceDetail";
+import Jewels from "../pages/jewels/Jewels";
+import Function from "../pages/function/Function";
 
 function Router() {
   return (
@@ -28,7 +30,7 @@ function Router() {
         <Route path="/vendor-detail" element={<VenderDetailPage />} />
         <Route path="/become-vendor" element={<BecomeVender />} />
         <Route path="/term-condition" element={<TermConditionPage />} />
-        {/* <Route path="/privacy-policy" element={<PrivacyPolicy />} /> */}
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/login" element={<Login />} />
         <Route path="/career" element={<CareerPage />} />
@@ -36,7 +38,8 @@ function Router() {
         <Route path="/products" element={<Product />} />
         <Route path="/services" element={<Services />} />
         <Route path="/service-detail" element={<ServiceDetail />} />
-        <Route path="/product-detail" element={<ProductDetail />} />
+        <Route path="/jewels" element={<Jewels />} />
+        <Route path="/functions" element={<Function />} />
       </Routes>
     </BrowserRouter>
   );

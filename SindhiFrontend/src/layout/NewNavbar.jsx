@@ -124,13 +124,13 @@ function NewNavbar() {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <a href="#functions" className="font-bold hover:text-[#E82600]">
+            <a href="/functions" className="font-bold hover:text-[#E82600]">
               How We Function
             </a>
             <a href="#offerings" className="font-bold hover:text-[#E82600]">
               Our Offerings
             </a>
-            <a href="#jewels" className="font-bold hover:text-[#E82600]">
+            <a href="/jewels" className="font-bold hover:text-[#E82600]">
               Jewels of SEW
             </a>
             <a href="#contact" className="font-bold hover:text-[#E82600]">
@@ -194,13 +194,13 @@ function NewNavbar() {
             </DropdownMenuContent>
           </DropdownMenu>
 
-          <a href="#functions" className="hover:text-[#E82600]">
+          <a href="/functions" className="hover:text-[#E82600]">
             Functions
           </a>
           <a href="#offerings" className="hover:text-[#E82600]">
             Offerings
           </a>
-          <a href="#jewels" className="hover:text-[#E82600]">
+          <a href="/jewels" className="hover:text-[#E82600]">
             Jewels
           </a>
           <a href="#contact" className="hover:text-[#E82600]">
