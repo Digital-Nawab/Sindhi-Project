@@ -143,7 +143,7 @@ function Navbar() {
       </div>
 
       {/* 🔹 Bottom Navbar (Gray Background) */}
-      <div className="bg-[#2f2f2f] text-white">
+      <div className="bg-[#053951] text-white">
         <div className="max-w-7xl mx-auto flex items-center space-x-6 h-15 px-4 sm:px-4 lg:px-8 overflow-x-auto text-sm sm:text-base">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>

@@ -6,7 +6,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function NewNavbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,18 +28,18 @@ function NewNavbar() {
   return (
     <nav className="relative w-full shadow border-b">
       {/* 🔹 Top Info Bar */}
-      <div className="bg-gray-100 border-b">
-        <div className="max-w-7xl mx-auto px-4 py-2 text-sm text-gray-600">
+      <div className="lg:bg-gray-300 border-b">
+        <div className="max-w-7xl mx-auto px-4 lg:py-2 text-sm text-gray-100">
           {/* Mobile Info */}
           <div className=" hidden space-y-2 text-center">
             <span className="flex items-center space-x-1">
-              <span className="text-pink-500">📞</span>
+              <span className="text-gray-800">📞</span>
               <span>
                 Call For More Info:{" "}
                 <strong className="text-gray-800">+91 9837054501</strong>
               </span>
             </span>
-            <span className="flex items-center space-x-1">
+            <span className="flex text-gray-900 items-center space-x-1">
               <span>📧</span>
               <span>
                 Mail:{" "}
@@ -49,18 +49,21 @@ function NewNavbar() {
           </div>
 
           {/* Desktop Info */}
-          <div className="hidden md:flex justify-between items-center">
+          <div className="hidden md:flex justify-between text-gray-900 items-center">
             <span>
               📞 Call: <strong className="text-gray-800">+91 9837054501</strong>
             </span>
             <NavLink to="/">
-              <img
+              {/* <img
                 src="assets/images/logo2.png"
                 alt="Logo"
-                className="h-8 md:h-10"
-              />
+                className="h-8 md:h-10" 
+              /> */}
+              <h1 className="text-2xl text-[#053951] lg:text-4xl font-bold alan">
+                Sindhu Entrepreneurs' World Connect
+              </h1>
             </NavLink>
-            <span>
+            <span className="text-gray-900">
               📧 Mail:{" "}
               <strong className="text-gray-800">testing@gmail.com</strong>
             </span>
@@ -73,20 +76,21 @@ function NewNavbar() {
         className={`w-full transition-all duration-500 ease-in-out ${
           isSticky
             ? "fixed top-0 left-0 right-0 bg-white text-gray-800 shadow-lg z-50 animate-slideDown"
-            : "lg:bg-[#2f2f2f] lg:text-white"
+            : "lg:bg-white lg:text-gray-800"
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
           {/* Sticky Logo */}
-          {isSticky && (
-            <div className="hidden md:flex items-center">
+
+          <div className="hidden md:flex items-center">
+            <Link to="/">
               <img
                 src="assets/images/logo.png"
                 alt="Logo"
                 className="h-8 md:h-10"
               />
-            </div>
-          )}
+            </Link>
+          </div>
 
           {/* Desktop Menu */}
           <div
@@ -133,7 +137,7 @@ function NewNavbar() {
             <a href="#jewels" className="font-bold hover:text-[#E82600]">
               Jewels of SEW
             </a>
-            <a href="#contact" className="font-bold hover:text-[#E82600]">
+            <a href="/contact-us" className="font-bold hover:text-[#E82600]">
               Contact
             </a>
           </div>
@@ -145,7 +149,7 @@ function NewNavbar() {
               className={`inline-block px-6 py-2 font-semibold rounded-lg shadow-md transition duration-300 ${
                 isSticky
                   ? "bg-[#053951] text-white hover:bg-[#E82600]"
-                  : "bg-white text-[#2f2f2f] hover:bg-[#E82600] hover:text-white"
+                  : "bg-[#053951] text-white hover:bg-[#E82600]"
               }`}
             >
               Become A Member
@@ -154,7 +158,9 @@ function NewNavbar() {
 
           {/* Mobile Logo + Menu Button */}
           <div className="flex md:hidden justify-between items-center w-full">
-            <img src="assets/images/logo2.png" alt="Logo" className="h-8" />
+            <Link to="/">
+              <img src="assets/images/logo.png" alt="Logo" className="h-8" />
+            </Link>
             <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
@@ -203,7 +209,7 @@ function NewNavbar() {
           <a href="#jewels" className="hover:text-[#E82600]">
             Jewels
           </a>
-          <a href="#contact" className="hover:text-[#E82600]">
+          <a href="/contact-us" className="hover:text-[#E82600]">
             Contact
           </a>
 
