@@ -16,6 +16,7 @@ import Product from "../pages/product/Product";
 import ProductDetail from "../pages/product/ProductDetail";
 import Services from "../pages/service/Services";
 import ServiceDetail from "../pages/service/ServiceDetail";
+import SEWConnectPage from "../pages/vision/Vision";
 import Jewels from "../pages/jewels/Jewels";
 import Function from "../pages/function/Function";
 
@@ -38,6 +39,8 @@ function Router() {
         <Route path="/products" element={<Product />} />
         <Route path="/services" element={<Services />} />
         <Route path="/service-detail" element={<ServiceDetail />} />
+        <Route path="/product-detail" element={<ProductDetail />} />
+        <Route path="/vision-mission" element={<SEWConnectPage />} />
         <Route path="/jewels" element={<Jewels />} />
         <Route path="/functions" element={<Function />} />
       </Routes>
