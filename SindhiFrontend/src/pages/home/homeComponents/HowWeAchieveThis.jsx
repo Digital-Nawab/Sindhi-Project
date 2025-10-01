@@ -8,7 +8,7 @@ const HowWeAchieveThis = () => {
       {/* Header Section */}
       <div className="text-center mb-16">
         <h1 className="text-4xl font-bold text-gray-900">
-          How We Achieve Our Goals
+          How SEW Connect Achieve Its Goals
         </h1>
         <p className="text-gray-600 text-lg mt-4 max-w-2xl mx-auto">
           Three powerful initiatives connecting Sindhu entrepreneurs worldwide

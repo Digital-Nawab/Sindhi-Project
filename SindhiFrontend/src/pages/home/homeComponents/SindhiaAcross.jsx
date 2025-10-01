@@ -46,8 +46,8 @@ function SindhiaAcross() {
               className="w-full h-60 lg:h-72 object-cover"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-              <h3 className="text-white font-semibold text-lg">New Delhi</h3>
-              <p className="text-gray-200 text-sm">12,000+ Members</p>
+              <h3 className="text-white font-semibold text-lg">MUMBAI + THANE</h3>
+              <p className="text-gray-200 text-sm">7,00,000++ Members</p>
             </div>
           </div>
 
@@ -59,8 +59,8 @@ function SindhiaAcross() {
               className="w-full h-60 lg:h-72 object-cover"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-              <h3 className="text-white font-semibold text-lg">Mumbai</h3>
-              <p className="text-gray-200 text-sm">12,000+ Members</p>
+              <h3 className="text-white font-semibold text-lg">Ahemdabad + Gandhinagar</h3>
+              <p className="text-gray-200 text-sm">3,00,000++ Members</p>
             </div>
           </div>
 
@@ -72,8 +72,8 @@ function SindhiaAcross() {
               className="w-full h-80 lg:h-[600px] object-cover"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-              <h3 className="text-white font-semibold text-lg">Goa</h3>
-              <p className="text-gray-200 text-sm">12,000+ Members</p>
+              <h3 className="text-white font-semibold text-lg">Spain</h3>
+              <p className="text-gray-200 text-sm">50,000+ Members</p>
             </div>
           </div>
 
@@ -85,8 +85,8 @@ function SindhiaAcross() {
               className="w-full h-60 lg:h-72 object-cover"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-              <h3 className="text-white font-semibold text-lg">Haryana</h3>
-              <p className="text-gray-200 text-sm">12,000+ Members</p>
+              <h3 className="text-white font-semibold text-lg">Rajasthan</h3>
+              <p className="text-gray-200 text-sm">1,20,000+ Members</p>
             </div>
           </div>
 
@@ -99,9 +99,9 @@ function SindhiaAcross() {
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
               <h3 className="text-white font-semibold text-lg">
-                Uttar Pradesh
+                Madhya Pradesh
               </h3>
-              <p className="text-gray-200 text-sm">12,000+ Members</p>
+              <p className="text-gray-200 text-sm">1,20,000+ Members</p>
             </div>
           </div>
         </div>

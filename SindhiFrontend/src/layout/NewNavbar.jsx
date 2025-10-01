@@ -122,9 +122,9 @@ function NewNavbar() {
             <a href="/functions" className="font-bold hover:text-[#E82600]">
               How We Function
             </a>
-            <a href="#offerings" className="font-bold hover:text-[#E82600]">
+            <Link to="/our-offerings" className="font-bold hover:text-[#E82600]">
               Our Offerings
-            </a>
+            </Link>
             <a href="/jewels" className="font-bold hover:text-[#E82600]">
               Jewels of SEW
             </a>

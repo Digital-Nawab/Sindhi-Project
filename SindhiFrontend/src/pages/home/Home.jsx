@@ -30,7 +30,7 @@ function Home() {
   return (
     <Layout>
       <Hero />
-      <AboutSindhiSection />
+      {/* <AboutSindhiSection /> */}
       {/* <Categories /> */}
       <OurPurpose />
       <HowWeAchieveThis/>

@@ -24,6 +24,7 @@ import ChaptersPage from "../pages/vision/CityChaptersPage";
 import DirectoryPage from "../pages/vision/DirectoryPage";
 import PodcastPage from "../pages/vision/PodcastPage";
 import AgraChapterFounders from "../pages/Agra";
+import Offerings from "../pages/Offerings";
 
 function Router() {
   return (
@@ -52,6 +53,7 @@ function Router() {
         <Route path="/chapters" element={<ChaptersPage />} />
         <Route path="/directory" element={<DirectoryPage />} />
         <Route path="/podcast" element={<PodcastPage />} />
+        <Route path="/our-offerings" element={<Offerings />} />
         <Route path="/agra-chapter-founders" element={<AgraChapterFounders />} />
       </Routes>
     </BrowserRouter>

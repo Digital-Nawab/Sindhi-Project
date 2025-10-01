@@ -1,5 +1,6 @@
 import React from "react";
-import { Youtube, Facebook, Linkedin } from "lucide-react";
+import { Youtube, Facebook, Linkedin, Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const LeadershipTeam = () => {
   return (
@@ -23,12 +24,12 @@ const LeadershipTeam = () => {
             <div className="text-center mb-6">
               <div className="inline-block relative">
                 <img
-                  src="/assets/images/home/founder.png"
+                  src="/assets/banner/founder.png"
                   alt="Amit Hirwani"
-                  className="w-48 h-48 rounded-2xl object-cover mx-auto mb-4"
+                  className="w-48 h-48 rounded-2xl object-cover mx-auto mb-4 object-[center_top]"
                 />
                 <div className="inline-block bg-[#CCDEFF] text-[#0250DF] px-4 py-2 rounded-full text-sm font-medium">
-                  Founder & Chairman
+                  Founder & CEO
                 </div>
               </div>
             </div>
@@ -47,15 +48,20 @@ const LeadershipTeam = () => {
 
             {/* Social Media Icons */}
             <div className="flex justify-center space-x-6">
-              <button className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors">
+              {/* <button className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors">
                 <Youtube className="w-5 h-5 text-white" />
-              </button>
+              </button> */}
+              <Link to="https://www.facebook.com/share/1CqUQ1Fxtz/" target="_blank">
+              
               <button className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors">
                 <Facebook className="w-5 h-5 text-white" />
               </button>
+              </Link>
+              <Link to="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=m0ko56r" target="_blank">
               <button className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors">
-                <Linkedin className="w-5 h-5 text-white" />
+                <Instagram className="w-5 h-5 text-white" />
               </button>
+              </Link>
             </div>
           </div>
 
@@ -66,14 +72,20 @@ const LeadershipTeam = () => {
             <p className="text-slate-100 leading-relaxed text-lg">
               Born in a traditional Sindhi family in Mumbai, Amit witnessed the
               challenges faced by the Sindhi community in preserving their
-              cultural identity while adapting to modern times.
+              cultural identity while adapting to modern times. Sometimes he
+              also felt being marginalized.
             </p>
 
             <p className="text-slate-100 leading-relaxed text-lg">
-              After building successful businesses across continents, he
-              realized the immense potential of connecting Sindhi entrepreneurs
-              and professionals globally. This vision led to the creation of
-              this platform.
+              He holds degree of Double Bachelors in Commerce & law. He is also
+              connected to different spritiual institutions like Isha
+              Foundation,Coimbatore & Sadhu Vaswani Mission,Pune
+            </p>
+            <p className="text-slate-100 leading-relaxed text-lg">
+              After building successful businesses of manufacturing of cleaning
+              products under brand of VENUS, he realized that there is a immense
+              potential of connecting Sindhi entrepreneurs and professionals
+              globally. This vision led to the creation of this platform.
             </p>
 
             <p className="text-slate-100 leading-relaxed text-lg">
@@ -84,11 +96,10 @@ const LeadershipTeam = () => {
             {/* Quote Box */}
             <div className="bg-white rounded-2xl p-6 border-l-4 border-red-500 mt-8">
               <p className="text-slate-900 text-lg italic leading-relaxed mb-4">
-                "Our strength lies in unity, our future in preserving our
-                heritage while embracing innovation."
+                “ Jab Judenge – Tabhi Badhenge”
               </p>
               <p className="text-slate-900 font-medium">
-                – Amit Hirwani, Founder
+                Amit Moriani, Founder
               </p>
             </div>
           </div>

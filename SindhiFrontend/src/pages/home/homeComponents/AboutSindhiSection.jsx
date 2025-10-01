@@ -7,7 +7,7 @@ const AboutSindhiSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
-            About <span className="text-red-500">Sindhi Community</span>
+            Famous <span className="text-red-500">Sindhi  Enterprenurs Worldwide</span>
           </h2>
           <p className="text-gray-900  text-lg max-w-2xl mx-auto">
             Meet the visionary leaders driving our community forward
