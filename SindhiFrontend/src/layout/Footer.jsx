@@ -48,7 +48,7 @@ function Footer() {
                 <span className="w-10 h-10 flex items-center justify-center bg-white rounded-full">
                   <Mail className="text-black w-5 h-5" />
                 </span>
-                <span>info@example.com</span>
+                <span>Info@sewconnect.in</span>
               </div>
               <div className="flex items-center gap-3">
                 <span className="w-10 h-10 flex items-center justify-center bg-white rounded-full">

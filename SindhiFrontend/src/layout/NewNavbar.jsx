@@ -43,7 +43,7 @@ function NewNavbar() {
               <span>📧</span>
               <span>
                 Mail:{" "}
-                <strong className="text-gray-800">testing@gmail.com</strong>
+                <strong className="text-gray-800">Info@sewconnect.in</strong>
               </span>
             </span>
           </div>

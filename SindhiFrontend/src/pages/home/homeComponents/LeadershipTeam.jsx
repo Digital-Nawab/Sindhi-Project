@@ -36,7 +36,7 @@ const LeadershipTeam = () => {
 
             {/* Name */}
             <h2 className="text-3xl font-bold text-gray-900 text-center mb-6">
-              Amit Hirwani
+              Amit Moriani
             </h2>
 
             {/* Description */}
