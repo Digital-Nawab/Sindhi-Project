@@ -25,6 +25,7 @@ import DirectoryPage from "../pages/vision/DirectoryPage";
 import PodcastPage from "../pages/vision/PodcastPage";
 import AgraChapterFounders from "../pages/Agra";
 import Offerings from "../pages/Offerings";
+import SEWConnectValues from "../pages/SEWConnectValues";
 
 function Router() {
   return (
@@ -53,6 +54,7 @@ function Router() {
         <Route path="/chapters" element={<ChaptersPage />} />
         <Route path="/directory" element={<DirectoryPage />} />
         <Route path="/podcast" element={<PodcastPage />} />
+        <Route path="/values" element={<SEWConnectValues />} />
         <Route path="/our-offerings" element={<Offerings />} />
         <Route path="/agra-chapter-founders" element={<AgraChapterFounders />} />
       </Routes>

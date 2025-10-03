@@ -1,5 +1,6 @@
 import React from "react";
 import { Eye, Target, Heart } from "lucide-react";
+import { Link, NavLink } from "react-router-dom";
 
 const OurPurpose = () => {
   return (
@@ -35,6 +36,9 @@ const OurPurpose = () => {
               To create the largest global network of Sindhis, fostering
               connections that transcend borders and generations.
             </p>
+            <NavLink to="/vision-mission" className='text-blue-900 mt-4 inline-block font-semibold hover:underline'>
+            Learn More
+            </NavLink>
           </div>
         </div>
 
@@ -57,6 +61,9 @@ const OurPurpose = () => {
               Empowering Sindhis worldwide through business opportunities,
               cultural preservation, and community support.
             </p>
+            <NavLink to="/vision-mission" className='text-blue-900 mt-4 inline-block font-semibold hover:underline'>
+            Learn More
+            </NavLink>
           </div>
         </div>
 
@@ -79,6 +86,9 @@ const OurPurpose = () => {
               Unity, integrity, and cultural pride guide everything we do. We
               believe in collective growth and mutual support.
             </p>
+            <NavLink to="/vision-mission" className='text-blue-900 mt-4 inline-block font-semibold hover:underline'>
+            Learn More
+            </NavLink>
           </div>
         </div>
       </div>

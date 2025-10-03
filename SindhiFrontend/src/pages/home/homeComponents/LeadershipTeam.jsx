@@ -70,7 +70,7 @@ const LeadershipTeam = () => {
             <h2 className="text-3xl font-bold mb-8">Our Founder's Story</h2>
 
             <p className="text-slate-100 leading-relaxed text-lg">
-              Born in a traditional Sindhi family in Mumbai, Amit witnessed the
+              Born in a traditional Sindhi family in Agra, Amit witnessed the
               challenges faced by the Sindhi community in preserving their
               cultural identity while adapting to modern times. Sometimes he
               also felt being marginalized.
@@ -96,7 +96,7 @@ const LeadershipTeam = () => {
             {/* Quote Box */}
             <div className="bg-white rounded-2xl p-6 border-l-4 border-red-500 mt-8">
               <p className="text-slate-900 text-lg italic leading-relaxed mb-4">
-                “ Jab Judenge – Tabhi Badhenge”
+                “ जब जुड़ेंगे – तभी बढ़ेंगे”
               </p>
               <p className="text-slate-900 font-medium">
                 Amit Moriani, Founder

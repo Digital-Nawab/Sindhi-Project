@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X, ChevronDown, Target, Eye } from "lucide-react";
+import { Menu, X, ChevronDown, Target, Eye, Phone } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -28,34 +28,28 @@ function NewNavbar() {
   return (
     <nav className="relative w-full shadow border-b">
       {/* 🔹 Top Info Bar */}
-      <div className="lg:bg-gray-300 border-b">
+      <div className="md:bg-slate-200 bg-[#053951] border-b">
         <div className="container mx-auto px-4 lg:py-2 text-sm text-gray-100">
           {/* Mobile Info */}
-          <div className=" hidden space-y-2 text-center">
-            <span className="flex items-center space-x-1">
-              <span className="text-gray-800">📞</span>
-              <span>
-                Call For More Info:{" "}
-                <strong className="text-gray-800">+91 9837054501</strong>
-              </span>
-            </span>
-            <span className="flex text-gray-900 items-center space-x-1">
-              <span>📧</span>
-              <span>
-                Mail:{" "}
-                <strong className="text-gray-800">Info@sewconnect.in</strong>
-              </span>
-            </span>
+          <div className="md:hidden flex justify-center text-gray-900 items-center">
+           
+            <NavLink to="/">
+              
+              <h1 className="text-xl text-white font-semibold alan">
+                Sindhu Entrepreneurs' World Connect
+              </h1>
+            </NavLink>
+           
           </div>
 
           {/* Desktop Info */}
           <div className="hidden md:flex justify-between text-gray-900 items-center">
-            <span>
-              📞 Call: <strong className="text-gray-800">+91 9837054501</strong>
+            <span className="flex items-center space-x-1">
+              <Phone fill="blue" size={15} /> Call: <strong className="text-gray-800">+91 9548152675</strong>
             </span>
             <NavLink to="/">
               {/* <img
-                src="assets/images/logo2.png"
+                src="assets/images  /logo2.png"
                 alt="Logo"
                 className="h-8 md:h-10" 
               /> */}
@@ -65,7 +59,7 @@ function NewNavbar() {
             </NavLink>
             <span className="text-gray-900">
               📧 Mail:{" "}
-              <strong className="text-gray-800">testing@gmail.com</strong>
+              <strong className="text-gray-800">Info@sewconnect.in</strong>
             </span>
           </div>
         </div>
@@ -116,13 +110,25 @@ function NewNavbar() {
                     Vision / Mission
                   </Link>
                 </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link
+                    to="/values"
+                    className="flex items-center gap-2 px-3 py-2 cursor-pointer hover:bg-gray-100 rounded-md transition"
+                  >
+                    <Target size={16} className="text-red-500" />
+                    Our Values
+                  </Link>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
 
             <a href="/functions" className="font-bold hover:text-[#E82600]">
               How We Function
             </a>
-            <Link to="/our-offerings" className="font-bold hover:text-[#E82600]">
+            <Link
+              to="/our-offerings"
+              className="font-bold hover:text-[#E82600]"
+            >
               Our Offerings
             </Link>
             <a href="/jewels" className="font-bold hover:text-[#E82600]">

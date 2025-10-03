@@ -10,13 +10,13 @@ const founders = [
   },
   {
     name: "Kamal Mangwani",
-    role: "CEO - R.B Hashmat Rai & Company",
+    role: "CEO -R.B Hashmat rai & Company",
     location: "Agra, India",
     img: "assets/banner/kamal.JPG", // update with actual image
   },
   {
     name: "Vikas Dulhani",
-    role: "CEO - Kamal Hosiery Works",
+    role: "CEO -kamal Hosiery Works",
     location: "Agra, India",
     img: "assets/banner/vikas.JPG", // update with actual image
   },
@@ -59,7 +59,7 @@ function Founder() {
                 <h3 className="text-2xl font-bold text-[#000000]">
                   {founder.name}
                 </h3>
-                {/* <p className="text-[#000000] mt-1">{founder.role}</p> */}
+                <p className="text-[#000000] mt-1">{founder.role}</p>
                 <div className="flex items-center justify-start text-gray-500 mt-3 text-sm text-left">
                   <MapPin className="w-4 h-4 mr-1" /> {founder.location}
                 </div>

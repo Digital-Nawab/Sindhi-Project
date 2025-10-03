@@ -220,7 +220,7 @@ const SEWConnectPage = () => {
         <footer className="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-8 mt-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p className="text-lg mb-2">Contact Us</p>
-            <p className="text-blue-200">sewconnect@gmail.com</p>
+            <p className="text-blue-200">Info@sewconnect.in</p>
             <p className="mt-4 text-sm text-blue-300">
               © 2025 SEW Connect. All rights reserved.
             </p>

@@ -49,7 +49,7 @@ function ProductDetail() {
       rating: 4.7,
       responseTime: "Within 2 hours",
       phone: "+91 98765 43210",
-      email: "info@sindhitextiles.com",
+      email: "Info@sewconnect.in",
       verified: true,
     },
     images: [
