@@ -4,7 +4,7 @@ import { MapPin } from "lucide-react";
 const founders = [
   {
     name: "Deepak Moriani",
-    role: "CEO - Valentino Shoes",
+    role: "Director-Venus Cleaning Products Pvt Ltd.",
     location: "Agra, India",
     img: "assets/banner/deepak.jpg", // update with actual image
   },
@@ -22,7 +22,7 @@ const founders = [
   },
   {
     name: "Himmat ramani",
-    role: "Director - K C Group",
+    role: "Agra Chapter Coordinators",
     location: "Agra, India",
     img: "assets/banner/himmat.JPG", // update with actual image
   },

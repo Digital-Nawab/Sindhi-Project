@@ -86,7 +86,7 @@ const OurPurpose = () => {
               Unity, integrity, and cultural pride guide everything we do. We
               believe in collective growth and mutual support.
             </p>
-            <NavLink to="/vision-mission" className='text-blue-900 mt-4 inline-block font-semibold hover:underline'>
+            <NavLink to="/values" className='text-blue-900 mt-4 inline-block font-semibold hover:underline'>
             Learn More
             </NavLink>
           </div>

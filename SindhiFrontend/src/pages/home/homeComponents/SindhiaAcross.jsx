@@ -11,15 +11,15 @@ function SindhiaAcross() {
           </p>
 
           <h2 className="text-lg sm:text-2xl lg:text-3xl font-bold text-white mb-2 leading-snug">
-            सब मिलाके एकत्र, सिन्धी समाज बनाओ
+           जय सिंध, जय सिंध, जाम-ए-मुहब्बत पिये सिंध
           </h2>
 
-          <p className="text-base sm:text-xl lg:text-2xl font-semibold text-white mb-2 leading-relaxed">
+          {/* <p className="text-base sm:text-xl lg:text-2xl font-semibold text-white mb-2 leading-relaxed">
             "Unite together, build the Sindhi community"
-          </p>
+          </p> */}
 
           <p className="text-xs sm:text-sm lg:text-base text-white">
-            — Traditional Sindhi Saying
+            — Hyder Bux Jatoi
           </p>
         </div>
 

@@ -6,35 +6,74 @@ import Layout from "../layout/Layout";
 const AgraChapterFounders = () => {
   const founders = [
     {
-      name: "Chander Daulatani",
-      position: "CEO",
-      company: "Valentino Shoes",
+      name: "Leena Moriani",
+      position: "Coordinator",
+      company: "",
       location: "Agra, India",
+      img:"/assets/banner/2.png"
     },
+    {
+      name: "Heer Moriani",
+      position: "Coordinator",
+      company: "Agra Chapter Founder Member",
+      location: "Agra, India",
+      img:"/assets/banner/heer.jpg"
+    },
+    // {
+    //   name: "Chander Daulatani",
+    //   position: "CEO",
+    //   company: "Valentino Shoes",
+    //   location: "Agra, India",
+    //   img:"/assets/banner/deepak.jpg"
+    // },
     {
       name: "Kamal Mangwani",
       position: "CEO",
-      company: "R.B Hashmat rai & Company",
+      company: "R.B Hashmat Rai & Company",
       location: "Agra, India",
+      img:"/assets/banner/kamal.JPG"
     },
     {
       name: "Vikas Dulhani",
       position: "CEO",
       company: "Kamal Hosiery Works",
       location: "Agra, India",
+      img:"/assets/banner/vikas.JPG"
     },
+    // {
+    //   name: "Manish Aswani",
+    //   position: "Director",
+    //   company: "K C Group",
+    //   location: "Agra, India",
+    //   img:"/assets/banner/deepak.jpg"
+    // },
+    // {
+    //   name: "Rajiv Nagrani",
+    //   position: "CEO",
+    //   company: "Usha Scales",
+    //   location: "Agra, India",
+    //   img:"/assets/banner/deepak.jpg"
+    // },
     {
-      name: "Manish Aswani",
+      name: "Deepak Moriani",
       position: "Director",
-      company: "K C Group",
+      company: "Venus Cleaning Products Pvt Ltd.",
       location: "Agra, India",
+      img:"/assets/banner/deepak.jpg"
     },
     {
-      name: "Rajiv Nagrani",
-      position: "CEO",
-      company: "Usha Scales",
+      name: "Deepak Dayalani",
+      position: "Financial Advisor",
+      company: "",
       location: "Agra, India",
+      img:"/assets/banner/deepakD.jpg"
     },
+     {
+    name: "Himmat ramani",
+    company: "Agra Chapter Coordinators",
+    location: "Agra, India",
+    img: "assets/banner/himmat.JPG", // update with actual image
+  },
   ];
 
   // Function to generate initials from name
@@ -66,7 +105,7 @@ const AgraChapterFounders = () => {
     <Layout>
       <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
         {/* Header Section */}
-        <div className="bg-gradient-to-r from-red-600 to-red-800 text-white py-16">
+        <div className="bg-gradient-to-r from-red-600 to-black text-white py-16">
           <div className="container mx-auto px-4">
             <div className="text-center">
               <div className="inline-flex items-center justify-center w-20 h-20 bg-white/20 rounded-full mb-6">
@@ -76,11 +115,10 @@ const AgraChapterFounders = () => {
                 Agra Chapter
               </h1>
               <h2 className="text-2xl md:text-3xl font-semibold mb-4">
-                Founder Members
+                Founder Members & Coordinators
               </h2>
               <p className="text-xl text-red-100 max-w-2xl mx-auto">
-                Meet the visionary leaders who established the Agra Chapter of
-                SEW Connect
+                Meet the visionary leaders who established and coordinate the Agra Chapter of SEW Connect
               </p>
             </div>
           </div>
@@ -92,8 +130,8 @@ const AgraChapterFounders = () => {
             <Card className="bg-white shadow-lg">
               <CardContent className="p-6 text-center">
                 <Users className="w-8 h-8 text-red-600 mx-auto mb-2" />
-                <div className="text-3xl font-bold text-gray-900">5</div>
-                <div className="text-gray-600">Founder Members</div>
+                <div className="text-3xl font-bold text-gray-900">{founders.length}</div>
+                <div className="text-gray-600">Members</div>
               </CardContent>
             </Card>
             <Card className="bg-white shadow-lg">
@@ -106,14 +144,14 @@ const AgraChapterFounders = () => {
             <Card className="bg-white shadow-lg">
               <CardContent className="p-6 text-center">
                 <Briefcase className="w-8 h-8 text-red-600 mx-auto mb-2" />
-                <div className="text-3xl font-bold text-gray-900">5</div>
+                <div className="text-3xl font-bold text-gray-900">Multiple</div>
                 <div className="text-gray-600">Industries</div>
               </CardContent>
             </Card>
           </div>
         </div>
 
-        {/* Founder Members Grid */}
+        {/* Members Grid */}
         <div className="container mx-auto px-4 pb-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {founders.map((founder, index) => (
@@ -127,12 +165,7 @@ const AgraChapterFounders = () => {
                     className="h-64 flex items-center justify-center text-white relative overflow-hidden"
                     style={{ background: getGradientForName(founder.name) }}
                   >
-                    <div className="text-6xl font-bold opacity-90">
-                      {getInitials(founder.name)}
-                    </div>
-                    {/* Decorative elements */}
-                    <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
-                    <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
+                    <img className="h-full w-full object-cover scale-110" src={founder.img} alt="" />
                   </div>
 
                   {/* Member Info */}
@@ -156,11 +189,11 @@ const AgraChapterFounders = () => {
                       <p className="text-gray-600">{founder.location}</p>
                     </div>
 
-                    {/* Founder Badge */}
+                    {/* Badge */}
                     <div className="mt-4 pt-4 border-t border-gray-200">
                       <div className="inline-flex items-center bg-red-50 text-red-700 px-3 py-1 rounded-full text-sm font-semibold">
                         <Award className="w-4 h-4 mr-1" />
-                        Founder Member
+                        Member
                       </div>
                     </div>
                   </div>
@@ -176,9 +209,7 @@ const AgraChapterFounders = () => {
                 Building a Stronger Business Community
               </h3>
               <p className="text-lg text-red-50 leading-relaxed">
-                These pioneering members laid the foundation for the Agra
-                Chapter, creating a vibrant ecosystem where Sindhu entrepreneurs
-                can connect, collaborate, and grow together.
+                These members and coordinators laid the foundation for the Agra Chapter, creating a vibrant ecosystem where Sindhu entrepreneurs can connect, collaborate, and grow together.
               </p>
             </div>
           </div>

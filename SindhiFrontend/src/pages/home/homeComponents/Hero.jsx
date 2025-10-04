@@ -12,11 +12,11 @@ import "swiper/css/effect-fade";
 
 function Hero() {
   const leftSlides = [
-    { id: 1, image: "/assets/banner/1.jpg", alt: "Sindhi Community Heritage" },
-    { id: 2, image: "/assets/banner/2.JPG", alt: "Business Network" },
-    { id: 3, image: "/assets/banner/3.JPG", alt: "Business Network" },
-    { id: 4, image: "/assets/banner/4.JPG", alt: "Business Network" },
-    { id: 5, image: "/assets/banner/5.JPG", alt: "Business Network" },
+    { id: 1, image: "/assets/banner/1.png", alt: "Sindhi Community Heritage" },
+    { id: 2, image: "/assets/banner/2.png", alt: "Business Network" },
+    { id: 3, image: "/assets/banner/3.png", alt: "Business Network" },
+    { id: 4, image: "/assets/banner/4.png", alt: "Business Network" },
+    { id: 5, image: "/assets/banner/5.png", alt: "Business Network" },
   ];
 
   const serviceCards = [
