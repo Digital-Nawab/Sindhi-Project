@@ -32,20 +32,18 @@ function NewNavbar() {
         <div className="container mx-auto px-4 lg:py-2 text-sm text-gray-100">
           {/* Mobile Info */}
           <div className="md:hidden flex justify-center text-gray-900 items-center">
-           
             <NavLink to="/">
-              
               <h1 className="text-xl text-white font-semibold alan">
                 Sindhu Entrepreneurs' World Connect
               </h1>
             </NavLink>
-           
           </div>
 
           {/* Desktop Info */}
           <div className="hidden md:flex justify-between text-gray-900 items-center">
             <span className="flex items-center space-x-1">
-              <Phone fill="blue" size={15} /> Call: <strong className="text-gray-800">+91 9548152675</strong>
+              <Phone fill="blue" size={15} /> Call:{" "}
+              <strong className="text-gray-800">+91 9548152675</strong>
             </span>
             <NavLink to="/">
               {/* <img
@@ -103,7 +101,7 @@ function NewNavbar() {
               >
                 <DropdownMenuItem asChild>
                   <Link
-                    to="vision-mission"
+                    to="/vision-mission"
                     className="flex items-center gap-2 px-3 py-2 cursor-pointer hover:bg-gray-100 rounded-md transition"
                   >
                     <Target size={16} className="text-red-500" />

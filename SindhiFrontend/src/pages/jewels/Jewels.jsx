@@ -46,10 +46,11 @@ function Jewels() {
 
   return (
     <Layout>
-      <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+      <div className="xl:min-h-screen  bg-gradient-to-br from-gray-50 to-gray-100">
         {/* Hero Section */}
-        <div className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-          <div className="absolute inset-0 opacity-10">
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+          <div className="relative container mx-auto grid lg:grid-cols-2 gap-6 p-6 overflow-hidden ">
+            {/* <div className="absolute inset-0 opacity-10">
             <div
               className="absolute inset-0"
               style={{
@@ -57,47 +58,56 @@ function Jewels() {
                   "radial-gradient(circle at 20% 50%, rgba(232,38,0,0.3) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(232,38,0,0.3) 0%, transparent 50%)",
               }}
             ></div>
-          </div>
+          </div> */}
+            <div className="relative flex justify-center items-center overflow-hidden ">
+              <video
+                src="/assets/banner/jewels.mp4"
+                className="rounded-2xl"
+                autoPlay
+                muted
+                loop
+              ></video>
+            </div>
 
-          <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
-            <div className="text-center">
-              <div className="flex justify-center mb-6 sm:mb-8">
-                <div className="relative">
-                  <div className="absolute inset-0 bg-red-600 opacity-20 blur-3xl rounded-full animate-pulse"></div>
-                  <div className="relative bg-gradient-to-br from-red-500 to-red-700 rounded-full p-4 sm:p-6 shadow-2xl">
-                    <Podcast className="w-12 h-12 sm:w-16 sm:h-16 text-white" />
+            <div className="relative container mx-auto p-6  2xl:p-16 flex items-center">
+              <div className="text-center">
+                <div className="flex justify-center mb-6 sm:mb-8">
+                  <div className="relative">
+                    <div className="absolute inset-0 bg-red-600 opacity-20 blur-3xl rounded-full animate-pulse"></div>
+                    <div className="relative bg-gradient-to-br from-red-500 to-red-700 rounded-full p-3 xl:p-6 shadow-2xl">
+                      <Podcast className="xl:w-12 xl:h-12 w-10 h-10 2xl:w-16 2xl:h-16 text-white" />
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-white px-4">
-                Jewels of SEW Connect
-              </h1>
+                <h1 className="text-3xl xl:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-white px-4">
+                  Jewels of SEW Connect
+                </h1>
 
-              <div className="inline-block bg-white bg-opacity-10 backdrop-blur-md px-4 sm:px-6 py-2 sm:py-3 rounded-full mb-6 sm:mb-8 border border-white border-opacity-20 mx-4">
-                <p className="text-base sm:text-md md:text-xl text-gray-700 font-semibold">
-                  Stories that Connect, Inspire, and Empower
+                <div className="inline-block bg-white bg-opacity-10 backdrop-blur-md px-2 sm:px-4 py-2 sm:py-3 rounded-full mb-4 sm:mb-5 border border-white border-opacity-20 mx-4">
+                  <p className="text-base sm:text-md  2xl:text-xl text-gray-700 font-semibold">
+                    Stories that Connect, Inspire, and Empower
+                  </p>
+                </div>
+
+                <p className="text-base 2xl:text-lg text-gray-300 max-w-2xl mx-auto mb-4 sm:mb-5 leading-relaxed px-4">
+                  The official podcasting channel of Sindhu Entrepreneurs' World
+                  Connect
                 </p>
+
+                <a
+                  href="https://www.youtube.com/@SEWConnect"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-6 sm:px-10 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold transition-all transform hover:scale-105 shadow-xl mx-4"
+                >
+                  <Youtube className="w-6 h-6 sm:w-7 sm:h-7" />
+                  Watch on YouTube
+                </a>
               </div>
-
-              <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed px-4">
-                The official podcasting channel of Sindhu Entrepreneurs' World
-                Connect
-              </p>
-
-              <a
-                href="https://www.youtube.com/@SEWConnect"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-6 sm:px-10 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold transition-all transform hover:scale-105 shadow-xl mx-4"
-              >
-                <Youtube className="w-6 h-6 sm:w-7 sm:h-7" />
-                Watch on YouTube
-              </a>
             </div>
           </div>
         </div>
-
         {/* About the Podcast Section */}
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24">
           <div className="text-center mb-12 sm:mb-16">
@@ -113,10 +123,10 @@ function Jewels() {
             <div className="max-w-5xl mx-auto bg-white rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 lg:p-12 border-l-4 sm:border-l-[5px] border-l-red-600">
               <div className="flex justify-center mb-4 sm:mb-6">
                 <div className="bg-red-50 p-3 sm:p-4 rounded-full">
-                  <Mic className="w-8 h-8 sm:w-10 sm:h-10 text-red-600" />
+                  <Mic className="w-6 h-6  xl:w-10 sm:h-10 text-red-600" />
                 </div>
               </div>
-              <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4 sm:mb-6">
+              <p className="text-base text-md xl:text-lg text-gray-700 leading-relaxed mb-4 sm:mb-6">
                 <span className="font-bold text-red-600">
                   Jewels of SEW Connect
                 </span>{" "}

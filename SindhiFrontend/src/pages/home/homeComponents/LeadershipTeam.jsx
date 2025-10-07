@@ -96,7 +96,7 @@ const LeadershipTeam = () => {
             {/* Quote Box */}
             <div className="bg-white rounded-2xl p-6 border-l-4 border-red-500 mt-8">
               <p className="text-slate-900 text-lg italic leading-relaxed mb-4">
-                “ जब जुड़ेंगे – तभी बढ़ेंगे”
+                “जब जुड़ेगा सिंधु , तब  बढ़ेगा सिंधु”
               </p>
               <p className="text-slate-900 font-medium">
                 Amit Moriani, Founder

@@ -135,7 +135,7 @@ function Hero() {
 
         {/* Mobile Layout */}
         <div className="md:hidden space-y-6">
-          <div className="h-[300px] rounded-xl overflow-hidden">
+          <div className="h-[220px] rounded-xl overflow-hidden">
             <Swiper
               modules={[Navigation, Pagination, Autoplay, EffectFade]}
               spaceBetween={0}

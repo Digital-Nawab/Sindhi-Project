@@ -10,70 +10,70 @@ const AgraChapterFounders = () => {
       position: "Coordinator",
       company: "",
       location: "Agra, India",
-      img:"/assets/banner/2.png"
+      img: "/assets/banner/2.png",
     },
     {
       name: "Heer Moriani",
       position: "Coordinator",
       company: "Agra Chapter Founder Member",
       location: "Agra, India",
-      img:"/assets/banner/heer.jpg"
+      img: "/assets/banner/heer.jpg",
     },
-    // {
-    //   name: "Chander Daulatani",
-    //   position: "CEO",
-    //   company: "Valentino Shoes",
-    //   location: "Agra, India",
-    //   img:"/assets/banner/deepak.jpg"
-    // },
+    {
+      name: "Chander Daulatani",
+      position: "CEO",
+      company: "Valentino Shoes",
+      location: "Agra, India",
+      // img:"/assets/banner/deepak.jpg"
+    },
     {
       name: "Kamal Mangwani",
       position: "CEO",
       company: "R.B Hashmat Rai & Company",
       location: "Agra, India",
-      img:"/assets/banner/kamal.JPG"
+      img: "/assets/banner/kamal.JPG",
     },
     {
       name: "Vikas Dulhani",
       position: "CEO",
       company: "Kamal Hosiery Works",
       location: "Agra, India",
-      img:"/assets/banner/vikas.JPG"
+      img: "/assets/banner/vikas.JPG",
     },
-    // {
-    //   name: "Manish Aswani",
-    //   position: "Director",
-    //   company: "K C Group",
-    //   location: "Agra, India",
-    //   img:"/assets/banner/deepak.jpg"
-    // },
-    // {
-    //   name: "Rajiv Nagrani",
-    //   position: "CEO",
-    //   company: "Usha Scales",
-    //   location: "Agra, India",
-    //   img:"/assets/banner/deepak.jpg"
-    // },
+    {
+      name: "Manish Aswani",
+      position: "Director",
+      company: "K C Group",
+      location: "Agra, India",
+      // img:"/assets/banner/deepak.jpg"
+    },
+    {
+      name: "Rajiv Nagrani",
+      position: "CEO",
+      company: "Usha Scales",
+      location: "Agra, India",
+      // img:"/assets/banner/deepak.jpg"
+    },
     {
       name: "Deepak Moriani",
       position: "Director",
       company: "Venus Cleaning Products Pvt Ltd.",
       location: "Agra, India",
-      img:"/assets/banner/deepak.jpg"
+      img: "/assets/banner/deepak.jpg",
     },
     {
       name: "Deepak Dayalani",
       position: "Financial Advisor",
       company: "",
       location: "Agra, India",
-      img:"/assets/banner/deepakD.jpg"
+      img: "/assets/banner/deepakD.jpg",
     },
-     {
-    name: "Himmat ramani",
-    company: "Agra Chapter Coordinators",
-    location: "Agra, India",
-    img: "assets/banner/himmat.JPG", // update with actual image
-  },
+    {
+      name: "Himmat ramani",
+      company: "Agra Chapter Coordinators",
+      location: "Agra, India",
+      img: "assets/banner/himmat.JPG", // update with actual image
+    },
   ];
 
   // Function to generate initials from name
@@ -118,7 +118,8 @@ const AgraChapterFounders = () => {
                 Founder Members & Coordinators
               </h2>
               <p className="text-xl text-red-100 max-w-2xl mx-auto">
-                Meet the visionary leaders who established and coordinate the Agra Chapter of SEW Connect
+                Meet the visionary leaders who established and coordinate the
+                Agra Chapter of SEW Connect
               </p>
             </div>
           </div>
@@ -130,7 +131,9 @@ const AgraChapterFounders = () => {
             <Card className="bg-white shadow-lg">
               <CardContent className="p-6 text-center">
                 <Users className="w-8 h-8 text-red-600 mx-auto mb-2" />
-                <div className="text-3xl font-bold text-gray-900">{founders.length}</div>
+                <div className="text-3xl font-bold text-gray-900">
+                  {founders.length}
+                </div>
                 <div className="text-gray-600">Members</div>
               </CardContent>
             </Card>
@@ -161,11 +164,23 @@ const AgraChapterFounders = () => {
               >
                 <CardContent className="p-0">
                   {/* Image Placeholder with Initials */}
+                  {/* Image Placeholder with Name or Image */}
                   <div
                     className="h-64 flex items-center justify-center text-white relative overflow-hidden"
                     style={{ background: getGradientForName(founder.name) }}
                   >
-                    <img className="h-full w-full object-cover scale-110" src={founder.img} alt="" />
+                    {founder.img ? (
+                      <img
+                        className="h-full w-full object-cover scale-110"
+                        src={founder.img}
+                        alt={founder.name}
+                      />
+                    ) : (
+                      // If no image, show name initials or full name
+                      <span className="text-3xl font-bold uppercase tracking-wide text-center px-4">
+                        {getInitials(founder.name)}
+                      </span>
+                    )}
                   </div>
 
                   {/* Member Info */}
@@ -209,7 +224,9 @@ const AgraChapterFounders = () => {
                 Building a Stronger Business Community
               </h3>
               <p className="text-lg text-red-50 leading-relaxed">
-                These members and coordinators laid the foundation for the Agra Chapter, creating a vibrant ecosystem where Sindhu entrepreneurs can connect, collaborate, and grow together.
+                These members and coordinators laid the foundation for the Agra
+                Chapter, creating a vibrant ecosystem where Sindhu entrepreneurs
+                can connect, collaborate, and grow together.
               </p>
             </div>
           </div>
