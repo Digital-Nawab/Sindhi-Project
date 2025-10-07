@@ -10,10 +10,13 @@ function AdvisoryBoard() {
           <h2 className="text-3xl font-extrabold text-gray-900">
             Advisory Board
           </h2>
-          <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
-            Our advisory board comprises distinguished Sindhi leaders from
-            various fields including business, education, technology, and social
-            work.
+          <p className="text-gray-600 mt-3 max-w-4xl mx-auto">
+            Sindhi Community Across the Globe Sindhus are spread across the
+            globe. Few cities with highest population are shown underneath.
+            SEWConnect aspires to open city chapter in all these cities so that
+            it can organize, events, meetups, and cultural programs.Till the
+            time we open a chapter in your city you can become our virtual
+            member free of cost. Join your local Sindhi chapter today!
           </p>
         </div>
 
@@ -28,7 +31,7 @@ function AdvisoryBoard() {
               Business Leaders
             </h3>
             <p className="text-gray-600 mt-2">
-              Industry experts guiding entrepreneurial <br/> initiatives
+              Industry experts guiding entrepreneurial <br /> initiatives
             </p>
           </div>
 
@@ -41,7 +44,8 @@ function AdvisoryBoard() {
               Cultural Icons
             </h3>
             <p className="text-gray-600 mt-2">
-              Preserving and promoting Sindhi <br/>heritage
+              Preserving and promoting Sindhi <br />
+              heritage
             </p>
           </div>
 
@@ -54,7 +58,7 @@ function AdvisoryBoard() {
               Social Workers
             </h3>
             <p className="text-gray-600 mt-2">
-              Driving community service and welfare <br/> programs
+              Driving community service and welfare <br /> programs
             </p>
           </div>
         </div>

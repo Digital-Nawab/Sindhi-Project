@@ -5,13 +5,13 @@ function SindhiaAcross() {
     <div className="w-full bg-white py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Banner */}
-        <div className="bg-gradient-to-r from-[#E82600] via-[#E51ED1] via-[#D41CE7] to-[#0250DF] rounded-lg text-center py-8 sm:py-10 lg:py-8 px-4 sm:px-6 lg:px-12 mb-12 sm:mb-16">
+        <div className="bg-gradient-to-r from-[#E82600] via-[#E51ED1]  to-[#0250DF] rounded-lg text-center py-8 sm:py-10 lg:py-8 px-4 sm:px-6 lg:px-12 mb-12 sm:mb-16">
           <p className="text-3xl sm:text-4xl lg:text-5xl text-white font-light mb-3 sm:mb-4">
             “
           </p>
 
           <h2 className="text-lg sm:text-2xl lg:text-3xl font-bold text-white mb-2 leading-snug">
-           जय सिंध, जय सिंध, जाम-ए-मुहब्बत पिये सिंध
+            जय सिंध, जय सिंध, जाम-ए-मुहब्बत पिये सिंध
           </h2>
 
           {/* <p className="text-base sm:text-xl lg:text-2xl font-semibold text-white mb-2 leading-relaxed">
@@ -46,7 +46,9 @@ function SindhiaAcross() {
               className="w-full h-60 lg:h-72 object-cover"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-              <h3 className="text-white font-semibold text-lg">MUMBAI + THANE</h3>
+              <h3 className="text-white font-semibold text-lg">
+                MUMBAI + THANE
+              </h3>
               <p className="text-gray-200 text-sm">7,00,000++ Members</p>
             </div>
           </div>
@@ -59,7 +61,9 @@ function SindhiaAcross() {
               className="w-full h-60 lg:h-72 object-cover"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-              <h3 className="text-white font-semibold text-lg">Ahemdabad + Gandhinagar</h3>
+              <h3 className="text-white font-semibold text-lg">
+                Ahemdabad + Gandhinagar
+              </h3>
               <p className="text-gray-200 text-sm">3,00,000++ Members</p>
             </div>
           </div>
@@ -72,8 +76,8 @@ function SindhiaAcross() {
               className="w-full h-80 lg:h-[600px] object-cover"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-              <h3 className="text-white font-semibold text-lg">Spain</h3>
-              <p className="text-gray-200 text-sm">50,000+ Members</p>
+              <h3 className="text-white font-semibold text-lg">UAE</h3>
+              <p className="text-gray-200 text-sm">2,00,000+ Members</p>
             </div>
           </div>
 
